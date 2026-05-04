@@ -64,6 +64,33 @@ export const DZIKIR_SETELAH_SHOLAT: DzikirItem[] = [
   },
 ];
 
+export const DZIKIR_PENUTUP: DzikirItem[] = [
+  {
+    arabic: "سُبْحَانَ اللَّهِ",
+    latin: "Subhanallah",
+    count: 10,
+    meaning: "Maha Suci Allah",
+  },
+  {
+    arabic: "الْحَمْدُ لِلَّهِ",
+    latin: "Alhamdulillah",
+    count: 10,
+    meaning: "Segala puji bagi Allah",
+  },
+  {
+    arabic: "اللَّهُ أَكْبَرُ",
+    latin: "Allahu Akbar",
+    count: 10,
+    meaning: "Allah Maha Besar",
+  },
+  {
+    arabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+    latin: "Allahumma shalli 'ala Muhammad wa 'ala ali Muhammad",
+    count: 10,
+    meaning: "Sholawat kepada Nabi Muhammad ﷺ (minimal 10x)",
+  },
+];
+
 export interface DoaItem {
   id: string;
   title: string;
