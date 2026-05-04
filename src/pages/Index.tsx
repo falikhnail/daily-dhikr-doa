@@ -197,12 +197,13 @@ const Index = () => {
             <section className="space-y-4">
               <div className="flex items-end justify-between">
                 <h2 className="font-display text-xl font-semibold text-primary">Doa Pilihan</h2>
-                <span className="text-xs text-muted-foreground">Setelah dzikir penutup</span>
+                <span className="text-xs text-muted-foreground">Setelah dzikir pembuka</span>
               </div>
               {DOA_UNIVERSAL.map((d) => (
                 <DoaCard key={d.id} doa={d} badge={d.subtitle} />
               ))}
             </section>
+            <DzikirPenutupCard />
           </>
         )}
 
