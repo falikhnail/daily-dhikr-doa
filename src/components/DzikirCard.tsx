@@ -1,5 +1,5 @@
-import { DZIKIR_SETELAH_SHOLAT, DZIKIR_PENUTUP, type DzikirItem } from "@/lib/prayerData";
-import { Sparkles, Moon } from "lucide-react";
+import { DZIKIR_SETELAH_SHOLAT, DZIKIR_PENUTUP, DZIKIR_PAGI_SORE, type DzikirItem } from "@/lib/prayerData";
+import { Sparkles, Moon, Sun } from "lucide-react";
 
 interface DzikirListProps {
   items: DzikirItem[];
