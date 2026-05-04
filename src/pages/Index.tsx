@@ -18,6 +18,7 @@ import {
   DOA_ISYA,
   DOA_SEBELUM_TIDUR,
   DOA_TAHAJUD,
+  DOA_UNIVERSAL,
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
