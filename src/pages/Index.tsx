@@ -4,7 +4,7 @@ import { useAdzanAlert } from "@/hooks/useAdzanAlert";
 import { useChecklist } from "@/hooks/useChecklist";
 import { PrayerSchedule } from "@/components/PrayerSchedule";
 import { DoaCard } from "@/components/DoaCard";
-import { DzikirCard, DzikirPenutupCard } from "@/components/DzikirCard";
+import { DzikirCard, DzikirPenutupCard, DzikirPagiSoreCard } from "@/components/DzikirCard";
 import {
   DOA_BANGUN_TIDUR,
   DOA_PAGI,
@@ -210,6 +210,9 @@ const Index = () => {
         {/* Doa setelah Subuh — Subuh → Syuruq */}
         {showFajrDoa && <DoaCard doa={DOA_SETELAH_SUBUH} badge="Setelah Subuh" />}
 
+        {/* Dzikir Pagi — setelah Subuh hingga Syuruq */}
+        {showFajrDoa && <DzikirPagiSoreCard variant="pagi" />}
+
         {/* Doa pagi — 1 jam setelah Syuruq */}
         {showMorningDoa && <DoaCard doa={DOA_PAGI} badge="Aktivitas Pagi" />}
 
@@ -224,6 +227,9 @@ const Index = () => {
 
         {/* Doa setelah Ashar */}
         {showAsharDoa && <DoaCard doa={DOA_SETELAH_ASHAR} badge="Setelah Ashar" />}
+
+        {/* Dzikir Sore — setelah Ashar hingga Maghrib */}
+        {(showAsharDoa || showSore) && <DzikirPagiSoreCard variant="sore" />}
 
         {/* Doa sore */}
         {showSore && <DoaCard doa={DOA_SORE} badge="Sore Hari" />}

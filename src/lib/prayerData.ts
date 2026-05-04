@@ -89,6 +89,52 @@ export const DZIKIR_PENUTUP: DzikirItem[] = [
     count: 10,
     meaning: "Sholawat kepada Nabi Muhammad ﷺ (minimal 10x)",
   },
+  {
+    arabic: "لَا إِلَهَ إِلَّا اللَّهُ",
+    latin: "La ilaha illallah",
+    count: 10,
+    meaning: "Tahlil — Tiada Tuhan selain Allah",
+  },
+  {
+    arabic: "الْحَمْدُ لِلَّهِ عَلَى كُلِّ حَالٍ",
+    latin: "Alhamdulillah 'ala kulli hal",
+    count: 3,
+    meaning: "Tahmid tambahan — Segala puji bagi Allah dalam segala keadaan",
+  },
+  {
+    arabic: "اللَّهُ أَكْبَرُ كَبِيرًا",
+    latin: "Allahu Akbar kabira",
+    count: 3,
+    meaning: "Takbir tambahan — Allah Maha Besar dengan sebesar-besarnya",
+  },
+  {
+    arabic: "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ، دِقَّهُ وَجِلَّهُ، أَوَّلَهُ وَآخِرَهُ، عَلَانِيَتَهُ وَسِرَّهُ",
+    latin: "Allahumma ighfirli dzanbi kullahu, diqqahu wa jillahu, awwalahu wa akhirahu",
+    count: 1,
+    meaning: "Istighfar panjang — Ya Allah ampuni seluruh dosaku, yang kecil maupun besar, yang awal maupun akhir, yang nampak maupun tersembunyi",
+  },
+];
+
+// Dzikir khusus pagi (setelah Subuh) & sore (setelah Ashar)
+export const DZIKIR_PAGI_SORE: DzikirItem[] = [
+  {
+    arabic: "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+    latin: "Bismillahilladzi la yadurru ma'asmihi syai'un fil ardhi wa la fis-sama'i wa huwas-sami'ul 'alim",
+    count: 3,
+    meaning: "Perlindungan — Dengan nama Allah yang dengan nama-Nya tidak ada sesuatu pun yang membahayakan di bumi maupun di langit, dan Dia Maha Mendengar lagi Maha Mengetahui",
+  },
+  {
+    arabic: "حَسْبِيَ اللَّهُ لَا إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
+    latin: "Hasbiyallahu la ilaha illa Huwa, 'alaihi tawakkaltu wa Huwa Rabbul 'arsyil 'azhim",
+    count: 7,
+    meaning: "Tawakal — Cukuplah Allah bagiku, tiada Tuhan selain Dia. Kepada-Nya aku bertawakal, dan Dia adalah Rabb 'Arsy yang agung",
+  },
+  {
+    arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+    latin: "Allahumma inni as'alukal 'afiyah fid-dunya wal akhirah",
+    count: 1,
+    meaning: "Keselamatan — Ya Allah, aku memohon kepada-Mu keselamatan di dunia dan akhirat",
+  },
 ];
 
 export interface DoaItem {

@@ -1,5 +1,5 @@
-import { DZIKIR_SETELAH_SHOLAT, DZIKIR_PENUTUP, type DzikirItem } from "@/lib/prayerData";
-import { Sparkles, Moon } from "lucide-react";
+import { DZIKIR_SETELAH_SHOLAT, DZIKIR_PENUTUP, DZIKIR_PAGI_SORE, type DzikirItem } from "@/lib/prayerData";
+import { Sparkles, Moon, Sun } from "lucide-react";
 
 interface DzikirListProps {
   items: DzikirItem[];
@@ -75,6 +75,17 @@ export function DzikirCard() {
       items={DZIKIR_SETELAH_SHOLAT}
       title="Dzikir Setelah Sholat"
       subtitle="Sebelum doa utama"
+      icon="gold"
+    />
+  );
+}
+
+export function DzikirPagiSoreCard({ variant }: { variant: "pagi" | "sore" }) {
+  return (
+    <DzikirList
+      items={DZIKIR_PAGI_SORE}
+      title={variant === "pagi" ? "Dzikir Pagi" : "Dzikir Sore"}
+      subtitle={variant === "pagi" ? "Setelah Subuh — perlindungan & tawakal" : "Setelah Ashar — perlindungan & tawakal"}
       icon="gold"
     />
   );
