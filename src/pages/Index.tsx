@@ -228,6 +228,9 @@ const Index = () => {
         {/* Doa setelah Ashar */}
         {showAsharDoa && <DoaCard doa={DOA_SETELAH_ASHAR} badge="Setelah Ashar" />}
 
+        {/* Dzikir Sore — setelah Ashar hingga Maghrib */}
+        {(showAsharDoa || showSore) && <DzikirPagiSoreCard variant="sore" />}
+
         {/* Doa sore */}
         {showSore && <DoaCard doa={DOA_SORE} badge="Sore Hari" />}
 
