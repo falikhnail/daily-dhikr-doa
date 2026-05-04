@@ -526,13 +526,21 @@ Pembuka:
 
 (Lanjutkan membaca surat hingga selesai dari mushaf Anda.)`,
 };
-
-
+export const DOA_UNIVERSAL: DoaItem[] = [
   DOA_ORANG_TUA,
   DOA_RIZQI,
   DOA_SERIBU_DINAR,
+  DOA_INSYIRAH,
   DOA_KETURUNAN,
   DOA_ISTIQOMAH,
+  DOA_BAQARAH_286,
   DOA_SAPU_JAGAT,
   DOA_HUSNUL_KHATIMAH,
 ];
+
+// Doa khusus malam (setelah Maghrib & Isya)
+export const DOA_MALAM: DoaItem[] = [
+  DOA_WAQIAH,
+  DOA_SHOLAWAT,
+];
+
