@@ -80,6 +80,17 @@ export function DzikirCard() {
   );
 }
 
+export function DzikirPagiSoreCard({ variant }: { variant: "pagi" | "sore" }) {
+  return (
+    <DzikirList
+      items={DZIKIR_PAGI_SORE}
+      title={variant === "pagi" ? "Dzikir Pagi" : "Dzikir Sore"}
+      subtitle={variant === "pagi" ? "Setelah Subuh — perlindungan & tawakal" : "Setelah Ashar — perlindungan & tawakal"}
+      icon="gold"
+    />
+  );
+}
+
 export function DzikirPenutupCard() {
   return (
     <DzikirList
