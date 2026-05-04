@@ -1,5 +1,5 @@
-import { DZIKIR_SETELAH_SHOLAT } from "@/lib/prayerData";
-import { Sparkles } from "lucide-react";
+import { DZIKIR_SETELAH_SHOLAT, DZIKIR_PENUTUP } from "@/lib/prayerData";
+import { Sparkles, Moon } from "lucide-react";
 
 export function DzikirCard() {
   return (
