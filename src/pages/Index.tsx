@@ -40,13 +40,53 @@ const Index = () => {
   const status = useMemo(() => getPrayerStatus(times), [times, now]);
 
   const hour = now.getHours();
-  const showWakeDoa = hour >= 3 && hour < 5 && !times; // fallback before fajr known
-  const showFajrDoa =
-    !!times && status.isAfterFajrBeforeSunrise && checked.fajr;
-  const showMorningDoa = !!times && status.isMorningActivity;
-  const showWakeAlways = hour >= 3 && hour <= 6; // window doa bangun
+  const nowMin = hour * 60 + now.getMinutes();
+
+  const toMin = (t?: string) => {
+    if (!t) return null;
+    const [h, m] = t.split(":").map(Number);
+    return h * 60 + m;
+  };
+  const fajrMin = toMin(times?.fajr);
+  const sunriseMin = toMin(times?.sunrise);
+  const dhuhrMin = toMin(times?.dhuhr);
+  const asrMin = toMin(times?.asr);
+  const maghribMin = toMin(times?.maghrib);
+  const ishaMin = toMin(times?.isha);
+
+  const between = (a: number | null, b: number | null) =>
+    a !== null && b !== null && nowMin >= a && nowMin < b;
+
+  // Jendela waktu setiap doa
+  const showTahajud = hour >= 1 && (fajrMin === null || nowMin < fajrMin); // 01:00 → Subuh
+  const showWake = fajrMin !== null
+    ? nowMin >= fajrMin && nowMin < fajrMin + 30
+    : hour >= 4 && hour < 5;
+  const showFajrDoa = between(fajrMin, sunriseMin);
+  const showMorningDoa = sunriseMin !== null &&
+    nowMin >= sunriseMin && nowMin < sunriseMin + 60;
+  const showDhuha = sunriseMin !== null && dhuhrMin !== null &&
+    nowMin >= sunriseMin + 60 && nowMin < dhuhrMin - 15;
+  const showDzuhurDoa = dhuhrMin !== null &&
+    nowMin >= dhuhrMin && nowMin < dhuhrMin + 60;
+  const showSiang = dhuhrMin !== null && asrMin !== null &&
+    nowMin >= dhuhrMin + 60 && nowMin < asrMin;
+  const showAsharDoa = asrMin !== null &&
+    nowMin >= asrMin && nowMin < asrMin + 60;
+  const showSore = asrMin !== null && maghribMin !== null &&
+    nowMin >= asrMin + 60 && nowMin < maghribMin;
+  const showMaghribDoa = between(maghribMin, ishaMin);
+  const showIshaDoa = ishaMin !== null &&
+    nowMin >= ishaMin && nowMin < ishaMin + 90;
+  const showTidur = ishaMin !== null
+    ? (nowMin >= ishaMin + 90 || hour < 1)
+    : hour >= 21 || hour < 1;
 
   const completedCount = PRAYERS.filter((p) => checked[p.key]).length;
+  const anyDoa =
+    showTahajud || showWake || showFajrDoa || showMorningDoa || showDhuha ||
+    showDzuhurDoa || showSiang || showAsharDoa || showSore || showMaghribDoa ||
+    showIshaDoa || showTidur;
 
   return (
     <main className="min-h-screen bg-background pb-24">
