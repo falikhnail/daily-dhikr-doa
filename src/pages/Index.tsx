@@ -183,32 +183,52 @@ const Index = () => {
           </section>
         )}
 
-        {/* Doa Bangun Tidur — early morning window */}
-        {(showWakeAlways || showWakeDoa) && (
-          <DoaCard doa={DOA_BANGUN_TIDUR} badge="Saat ini" />
-        )}
+        {/* Doa Tahajud — sepertiga malam (01:00 → Subuh) */}
+        {showTahajud && <DoaCard doa={DOA_TAHAJUD} badge="Sepertiga Malam" />}
 
-        {/* Dzikir setelah sholat — selalu tersedia setelah ada waktu sholat aktif */}
-        {status.current && (
-          <DzikirCard />
-        )}
+        {/* Doa Bangun Tidur — saat/sekitar Subuh */}
+        {showWake && <DoaCard doa={DOA_BANGUN_TIDUR} badge="Bangun Tidur" />}
 
-        {/* Doa setelah Subuh — setelah Subuh & sebelum sunrise, atau setelah ditandai */}
+        {/* Dzikir setelah sholat — saat ada waktu sholat aktif */}
+        {status.current && <DzikirCard />}
+
+        {/* Doa setelah Subuh — Subuh → Syuruq */}
         {showFajrDoa && <DoaCard doa={DOA_SETELAH_SUBUH} badge="Setelah Subuh" />}
-        {!showFajrDoa && status.isAfterFajrBeforeSunrise && (
-          <DoaCard doa={DOA_SETELAH_SUBUH} badge="Setelah Subuh" />
-        )}
 
-        {/* Doa pagi — sunrise → dhuhr */}
+        {/* Doa pagi — 1 jam setelah Syuruq */}
         {showMorningDoa && <DoaCard doa={DOA_PAGI} badge="Aktivitas Pagi" />}
 
+        {/* Doa Dhuha */}
+        {showDhuha && <DoaCard doa={DOA_DHUHA} badge="Waktu Dhuha" />}
+
+        {/* Doa setelah Dzuhur */}
+        {showDzuhurDoa && <DoaCard doa={DOA_SETELAH_DZUHUR} badge="Setelah Dzuhur" />}
+
+        {/* Doa siang */}
+        {showSiang && <DoaCard doa={DOA_SIANG} badge="Siang Hari" />}
+
+        {/* Doa setelah Ashar */}
+        {showAsharDoa && <DoaCard doa={DOA_SETELAH_ASHAR} badge="Setelah Ashar" />}
+
+        {/* Doa sore */}
+        {showSore && <DoaCard doa={DOA_SORE} badge="Sore Hari" />}
+
+        {/* Doa Maghrib */}
+        {showMaghribDoa && <DoaCard doa={DOA_MAGHRIB} badge="Setelah Maghrib" />}
+
+        {/* Doa Isya */}
+        {showIshaDoa && <DoaCard doa={DOA_ISYA} badge="Setelah Isya" />}
+
+        {/* Doa sebelum tidur */}
+        {showTidur && <DoaCard doa={DOA_SEBELUM_TIDUR} badge="Sebelum Tidur" />}
+
         {/* Quiet state */}
-        {times && !status.current && !showWakeAlways && (
+        {times && !status.current && !anyDoa && (
           <div className="rounded-3xl border border-border bg-card-gradient p-8 text-center">
             <Moon className="mx-auto h-8 w-8 text-accent" />
             <p className="mt-3 font-display text-xl text-primary">Waktu istirahat</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Belum ada doa terjadwal. Pengingat akan muncul saat masuk waktu sholat.
+              Belum ada doa terjadwal. Pengingat akan muncul saat masuk waktunya.
             </p>
           </div>
         )}
