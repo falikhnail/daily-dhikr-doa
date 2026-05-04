@@ -9,6 +9,15 @@ import {
   DOA_BANGUN_TIDUR,
   DOA_PAGI,
   DOA_SETELAH_SUBUH,
+  DOA_DHUHA,
+  DOA_SETELAH_DZUHUR,
+  DOA_SIANG,
+  DOA_SETELAH_ASHAR,
+  DOA_SORE,
+  DOA_MAGHRIB,
+  DOA_ISYA,
+  DOA_SEBELUM_TIDUR,
+  DOA_TAHAJUD,
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
@@ -31,13 +40,53 @@ const Index = () => {
   const status = useMemo(() => getPrayerStatus(times), [times, now]);
 
   const hour = now.getHours();
-  const showWakeDoa = hour >= 3 && hour < 5 && !times; // fallback before fajr known
-  const showFajrDoa =
-    !!times && status.isAfterFajrBeforeSunrise && checked.fajr;
-  const showMorningDoa = !!times && status.isMorningActivity;
-  const showWakeAlways = hour >= 3 && hour <= 6; // window doa bangun
+  const nowMin = hour * 60 + now.getMinutes();
+
+  const toMin = (t?: string) => {
+    if (!t) return null;
+    const [h, m] = t.split(":").map(Number);
+    return h * 60 + m;
+  };
+  const fajrMin = toMin(times?.fajr);
+  const sunriseMin = toMin(times?.sunrise);
+  const dhuhrMin = toMin(times?.dhuhr);
+  const asrMin = toMin(times?.asr);
+  const maghribMin = toMin(times?.maghrib);
+  const ishaMin = toMin(times?.isha);
+
+  const between = (a: number | null, b: number | null) =>
+    a !== null && b !== null && nowMin >= a && nowMin < b;
+
+  // Jendela waktu setiap doa
+  const showTahajud = hour >= 1 && (fajrMin === null || nowMin < fajrMin); // 01:00 → Subuh
+  const showWake = fajrMin !== null
+    ? nowMin >= fajrMin && nowMin < fajrMin + 30
+    : hour >= 4 && hour < 5;
+  const showFajrDoa = between(fajrMin, sunriseMin);
+  const showMorningDoa = sunriseMin !== null &&
+    nowMin >= sunriseMin && nowMin < sunriseMin + 60;
+  const showDhuha = sunriseMin !== null && dhuhrMin !== null &&
+    nowMin >= sunriseMin + 60 && nowMin < dhuhrMin - 15;
+  const showDzuhurDoa = dhuhrMin !== null &&
+    nowMin >= dhuhrMin && nowMin < dhuhrMin + 60;
+  const showSiang = dhuhrMin !== null && asrMin !== null &&
+    nowMin >= dhuhrMin + 60 && nowMin < asrMin;
+  const showAsharDoa = asrMin !== null &&
+    nowMin >= asrMin && nowMin < asrMin + 60;
+  const showSore = asrMin !== null && maghribMin !== null &&
+    nowMin >= asrMin + 60 && nowMin < maghribMin;
+  const showMaghribDoa = between(maghribMin, ishaMin);
+  const showIshaDoa = ishaMin !== null &&
+    nowMin >= ishaMin && nowMin < ishaMin + 90;
+  const showTidur = ishaMin !== null
+    ? (nowMin >= ishaMin + 90 || hour < 1)
+    : hour >= 21 || hour < 1;
 
   const completedCount = PRAYERS.filter((p) => checked[p.key]).length;
+  const anyDoa =
+    showTahajud || showWake || showFajrDoa || showMorningDoa || showDhuha ||
+    showDzuhurDoa || showSiang || showAsharDoa || showSore || showMaghribDoa ||
+    showIshaDoa || showTidur;
 
   return (
     <main className="min-h-screen bg-background pb-24">
@@ -134,32 +183,52 @@ const Index = () => {
           </section>
         )}
 
-        {/* Doa Bangun Tidur — early morning window */}
-        {(showWakeAlways || showWakeDoa) && (
-          <DoaCard doa={DOA_BANGUN_TIDUR} badge="Saat ini" />
-        )}
+        {/* Doa Tahajud — sepertiga malam (01:00 → Subuh) */}
+        {showTahajud && <DoaCard doa={DOA_TAHAJUD} badge="Sepertiga Malam" />}
 
-        {/* Dzikir setelah sholat — selalu tersedia setelah ada waktu sholat aktif */}
-        {status.current && (
-          <DzikirCard />
-        )}
+        {/* Doa Bangun Tidur — saat/sekitar Subuh */}
+        {showWake && <DoaCard doa={DOA_BANGUN_TIDUR} badge="Bangun Tidur" />}
 
-        {/* Doa setelah Subuh — setelah Subuh & sebelum sunrise, atau setelah ditandai */}
+        {/* Dzikir setelah sholat — saat ada waktu sholat aktif */}
+        {status.current && <DzikirCard />}
+
+        {/* Doa setelah Subuh — Subuh → Syuruq */}
         {showFajrDoa && <DoaCard doa={DOA_SETELAH_SUBUH} badge="Setelah Subuh" />}
-        {!showFajrDoa && status.isAfterFajrBeforeSunrise && (
-          <DoaCard doa={DOA_SETELAH_SUBUH} badge="Setelah Subuh" />
-        )}
 
-        {/* Doa pagi — sunrise → dhuhr */}
+        {/* Doa pagi — 1 jam setelah Syuruq */}
         {showMorningDoa && <DoaCard doa={DOA_PAGI} badge="Aktivitas Pagi" />}
 
+        {/* Doa Dhuha */}
+        {showDhuha && <DoaCard doa={DOA_DHUHA} badge="Waktu Dhuha" />}
+
+        {/* Doa setelah Dzuhur */}
+        {showDzuhurDoa && <DoaCard doa={DOA_SETELAH_DZUHUR} badge="Setelah Dzuhur" />}
+
+        {/* Doa siang */}
+        {showSiang && <DoaCard doa={DOA_SIANG} badge="Siang Hari" />}
+
+        {/* Doa setelah Ashar */}
+        {showAsharDoa && <DoaCard doa={DOA_SETELAH_ASHAR} badge="Setelah Ashar" />}
+
+        {/* Doa sore */}
+        {showSore && <DoaCard doa={DOA_SORE} badge="Sore Hari" />}
+
+        {/* Doa Maghrib */}
+        {showMaghribDoa && <DoaCard doa={DOA_MAGHRIB} badge="Setelah Maghrib" />}
+
+        {/* Doa Isya */}
+        {showIshaDoa && <DoaCard doa={DOA_ISYA} badge="Setelah Isya" />}
+
+        {/* Doa sebelum tidur */}
+        {showTidur && <DoaCard doa={DOA_SEBELUM_TIDUR} badge="Sebelum Tidur" />}
+
         {/* Quiet state */}
-        {times && !status.current && !showWakeAlways && (
+        {times && !status.current && !anyDoa && (
           <div className="rounded-3xl border border-border bg-card-gradient p-8 text-center">
             <Moon className="mx-auto h-8 w-8 text-accent" />
             <p className="mt-3 font-display text-xl text-primary">Waktu istirahat</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Belum ada doa terjadwal. Pengingat akan muncul saat masuk waktu sholat.
+              Belum ada doa terjadwal. Pengingat akan muncul saat masuk waktunya.
             </p>
           </div>
         )}
