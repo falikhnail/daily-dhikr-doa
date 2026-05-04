@@ -461,12 +461,86 @@ export const DOA_SERIBU_DINAR: DoaItem = {
 (QS. At-Talaq: 2–3)`,
 };
 
+export const DOA_INSYIRAH: DoaItem = {
+  id: "insyirah",
+  title: "QS. Al-Insyirah",
+  subtitle: "Kelapangan urusan",
+  emoji: "🌿",
+  body: `أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ ۝ وَوَضَعْنَا عَنْكَ وِزْرَكَ ۝ الَّذِي أَنْقَضَ ظَهْرَكَ ۝ وَرَفَعْنَا لَكَ ذِكْرَكَ ۝ فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ فَإِذَا فَرَغْتَ فَانْصَبْ ۝ وَإِلَىٰ رَبِّكَ فَارْغَبْ
+
+"Bukankah Kami telah melapangkan dadamu untukmu? Dan Kami pun telah menurunkan bebanmu darimu, yang memberatkan punggungmu, dan Kami tinggikan sebutan (nama)mu bagimu.
+
+Maka sesungguhnya bersama kesulitan ada kemudahan. Sesungguhnya bersama kesulitan ada kemudahan.
+
+Maka apabila engkau telah selesai (dari suatu urusan), tetaplah bekerja keras (untuk urusan yang lain), dan hanya kepada Tuhanmulah engkau berharap."
+
+(QS. Al-Insyirah: 1–8)`,
+};
+
+export const DOA_BAQARAH_286: DoaItem = {
+  id: "baqarah-286",
+  title: "QS. Al-Baqarah: 286",
+  subtitle: "Perlindungan & kekuatan",
+  emoji: "🛡️",
+  body: `رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَسِينَا أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ ۖ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا ۚ أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ
+
+"Ya Rabb kami, janganlah Engkau hukum kami jika kami lupa atau kami melakukan kesalahan.
+
+Ya Rabb kami, janganlah Engkau bebani kami dengan beban yang berat sebagaimana Engkau bebankan kepada orang-orang sebelum kami.
+
+Ya Rabb kami, janganlah Engkau pikulkan kepada kami apa yang tidak sanggup kami memikulnya.
+
+Maafkanlah kami, ampunilah kami, dan rahmatilah kami. Engkaulah pelindung kami, maka tolonglah kami menghadapi kaum yang kafir."
+
+(QS. Al-Baqarah: 286 — penutup)`,
+};
+
+export const DOA_SHOLAWAT: DoaItem = {
+  id: "sholawat",
+  title: "Sholawat Ibrahimiyah",
+  subtitle: "Penguat doa",
+  emoji: "🌹",
+  body: `اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، وَبَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ، فِي الْعَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ
+
+"Ya Allah, limpahkanlah sholawat kepada Nabi Muhammad ﷺ dan keluarga beliau, sebagaimana Engkau telah memberikan sholawat kepada Nabi Ibrahim dan keluarganya.
+
+Berkahilah Nabi Muhammad ﷺ dan keluarganya, sebagaimana Engkau telah memberkahi Nabi Ibrahim dan keluarganya, di seluruh alam. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."`,
+};
+
+export const DOA_WAQIAH: DoaItem = {
+  id: "waqiah",
+  title: "QS. Al-Waqi'ah",
+  subtitle: "Pembuka rezeki — dibaca malam hari",
+  emoji: "🌙",
+  body: `Dianjurkan membaca QS. Al-Waqi'ah secara penuh (96 ayat) di malam hari sebagai pembuka pintu rezeki.
+
+Sabda Nabi ﷺ:
+"Barangsiapa membaca surat Al-Waqi'ah pada setiap malam, maka ia tidak akan ditimpa kefakiran selama-lamanya."
+(HR. Al-Baihaqi)
+
+Pembuka:
+بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+إِذَا وَقَعَتِ الْوَاقِعَةُ ۝ لَيْسَ لِوَقْعَتِهَا كَاذِبَةٌ ۝ خَافِضَةٌ رَافِعَةٌ
+
+"Apabila terjadi hari Kiamat, tidak seorang pun dapat mendustakan kejadiannya. (Kejadian itu) merendahkan (satu golongan) dan meninggikan (golongan yang lain)."
+
+(Lanjutkan membaca surat hingga selesai dari mushaf Anda.)`,
+};
 export const DOA_UNIVERSAL: DoaItem[] = [
   DOA_ORANG_TUA,
   DOA_RIZQI,
   DOA_SERIBU_DINAR,
+  DOA_INSYIRAH,
   DOA_KETURUNAN,
   DOA_ISTIQOMAH,
+  DOA_BAQARAH_286,
   DOA_SAPU_JAGAT,
   DOA_HUSNUL_KHATIMAH,
 ];
+
+// Doa khusus malam (setelah Maghrib & Isya)
+export const DOA_MALAM: DoaItem[] = [
+  DOA_WAQIAH,
+  DOA_SHOLAWAT,
+];
+

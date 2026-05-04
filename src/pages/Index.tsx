@@ -19,6 +19,7 @@ import {
   DOA_SEBELUM_TIDUR,
   DOA_TAHAJUD,
   DOA_UNIVERSAL,
+  DOA_MALAM,
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
@@ -239,6 +240,16 @@ const Index = () => {
 
         {/* Doa Isya */}
         {showIshaDoa && <DoaCard doa={DOA_ISYA} badge="Setelah Isya" />}
+
+        {/* Doa khusus malam — setelah Maghrib, Isya, atau menjelang tidur */}
+        {(showMaghribDoa || showIshaDoa || showTidur) && (
+          <section className="space-y-4">
+            <h2 className="font-display text-xl font-semibold text-primary">Bacaan Malam</h2>
+            {DOA_MALAM.map((d) => (
+              <DoaCard key={d.id} doa={d} badge={d.subtitle} />
+            ))}
+          </section>
+        )}
 
         {/* Doa sebelum tidur */}
         {showTidur && <DoaCard doa={DOA_SEBELUM_TIDUR} badge="Sebelum Tidur" />}
