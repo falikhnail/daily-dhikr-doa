@@ -64,6 +64,33 @@ export const DZIKIR_SETELAH_SHOLAT: DzikirItem[] = [
   },
 ];
 
+export const DZIKIR_PENUTUP: DzikirItem[] = [
+  {
+    arabic: "سُبْحَانَ اللَّهِ",
+    latin: "Subhanallah",
+    count: 10,
+    meaning: "Maha Suci Allah",
+  },
+  {
+    arabic: "الْحَمْدُ لِلَّهِ",
+    latin: "Alhamdulillah",
+    count: 10,
+    meaning: "Segala puji bagi Allah",
+  },
+  {
+    arabic: "اللَّهُ أَكْبَرُ",
+    latin: "Allahu Akbar",
+    count: 10,
+    meaning: "Allah Maha Besar",
+  },
+  {
+    arabic: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+    latin: "Allahumma shalli 'ala Muhammad wa 'ala ali Muhammad",
+    count: 10,
+    meaning: "Sholawat kepada Nabi Muhammad ﷺ (minimal 10x)",
+  },
+];
+
 export interface DoaItem {
   id: string;
   title: string;
@@ -285,3 +312,100 @@ Jadikan aku istiqamah dalam iman, tepat dalam keputusan, dan selamat dari segala
 
 Berikan kami keselamatan dunia dan akhirat, dan wafatkan kami dalam keadaan husnul khatimah.`,
 };
+
+// ============= DOA UNIVERSAL (selalu tersedia setelah sholat) =============
+
+export const DOA_ORANG_TUA: DoaItem = {
+  id: "ortu",
+  title: "Doa untuk Orang Tua",
+  subtitle: "Rabbighfirli wa liwalidayya",
+  emoji: "👨‍👩‍👦",
+  body: `رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا
+
+"Ya Rabb, ampunilah aku dan kedua orang tuaku. Sayangilah mereka sebagaimana mereka menyayangiku di waktu kecil.
+
+Panjangkan umur mereka dalam ketaatan, sehatkan jasmani dan rohani mereka, lapangkan rezeki mereka, dan jadikan akhir hidup mereka husnul khatimah.
+
+Bagi yang telah tiada, lapangkan kuburnya, terangi dengan cahaya-Mu, dan tempatkan mereka di surga-Mu yang tertinggi."`,
+};
+
+export const DOA_SAPU_JAGAT: DoaItem = {
+  id: "sapu-jagat",
+  title: "Doa Sapu Jagat",
+  subtitle: "Kebaikan dunia & akhirat",
+  emoji: "🌍",
+  body: `رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ
+
+"Ya Rabb kami, berikanlah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari siksa api neraka."
+
+(QS. Al-Baqarah: 201)`,
+};
+
+export const DOA_RIZQI: DoaItem = {
+  id: "rizqi",
+  title: "Doa Memohon Rezeki",
+  subtitle: "Rezeki halal, luas, & berkah",
+  emoji: "💰",
+  body: `اللَّهُمَّ إِنِّي أَسْأَلُكَ رِزْقًا حَلَالًا طَيِّبًا مُبَارَكًا
+
+"Ya Allah, aku memohon kepada-Mu rezeki yang halal, baik, dan berkah.
+
+Jika rezekiku jauh, dekatkanlah. Jika sulit, mudahkanlah. Jika sedikit, perbanyaklah. Jika banyak, berkahilah.
+
+Cukupkan aku dengan yang halal sehingga aku tidak butuh kepada yang haram, dan cukupkan aku dengan karunia-Mu sehingga aku tidak bergantung kepada selain-Mu.
+
+Mudahkan karierku, lancarkan usahaku, dan jadikan setiap rezekiku bermanfaat bagi keluargaku dan sesama."`,
+};
+
+export const DOA_KETURUNAN: DoaItem = {
+  id: "keturunan",
+  title: "Doa untuk Istri & Anak",
+  subtitle: "Keluarga sakinah",
+  emoji: "👶",
+  body: `رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+
+"Ya Rabb kami, anugerahkanlah kepada kami pasangan dan keturunan sebagai penyejuk hati, dan jadikanlah kami imam bagi orang-orang yang bertakwa."
+
+(QS. Al-Furqan: 74)
+
+Ya Allah, jaga istriku dalam kesehatan dan kebahagiaan. Sempurnakan penciptaan anak kami dalam kandungan, sehatkan ia, dan jadikan ia anak yang sholeh/sholehah, cerdas, berakhlak mulia, dan menjadi penyejuk mata kami.
+
+Mudahkan persalinannya, dan jadikan keluarga kami keluarga yang sakinah, mawaddah, wa rahmah.`,
+};
+
+export const DOA_ISTIQOMAH: DoaItem = {
+  id: "istiqomah",
+  title: "Doa Istiqamah & Keputusan",
+  subtitle: "Diteguhkan dalam iman",
+  emoji: "🧭",
+  body: `يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ
+
+"Wahai Yang Membolak-balikkan hati, teguhkanlah hatiku di atas agama-Mu.
+
+Ya Allah, bimbing aku dalam setiap keputusan. Tunjukkan mana yang benar dan mudahkan aku untuk mengikutinya. Tunjukkan mana yang salah dan jauhkan aku darinya.
+
+Lindungi aku dari fitnah yang terlihat maupun tersembunyi. Jadikan aku pribadi yang istiqamah, jujur, dan amanah."`,
+};
+
+export const DOA_HUSNUL_KHATIMAH: DoaItem = {
+  id: "husnul",
+  title: "Doa Husnul Khatimah",
+  subtitle: "Akhir hidup yang baik",
+  emoji: "🤲",
+  body: `اللَّهُمَّ اخْتِمْ لَنَا بِحُسْنِ الْخَاتِمَةِ
+
+"Ya Allah, akhirilah hidup kami dengan husnul khatimah.
+
+Wafatkan kami dalam keadaan beriman, mengucap kalimat tauhid, dan dalam ridha-Mu.
+
+Berikan kami keselamatan dunia dan akhirat, kumpulkan kami bersama keluarga di surga-Mu yang tertinggi, bersama para nabi, shiddiqin, syuhada, dan orang-orang sholeh."`,
+};
+
+export const DOA_UNIVERSAL: DoaItem[] = [
+  DOA_ORANG_TUA,
+  DOA_RIZQI,
+  DOA_KETURUNAN,
+  DOA_ISTIQOMAH,
+  DOA_SAPU_JAGAT,
+  DOA_HUSNUL_KHATIMAH,
+];
