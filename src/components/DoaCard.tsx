@@ -1,0 +1,35 @@
+import type { DoaItem } from "@/lib/prayerData";
+
+interface Props {
+  doa: DoaItem;
+  badge?: string;
+}
+
+export function DoaCard({ doa, badge }: Props) {
+  return (
+    <div className="animate-fade-up relative overflow-hidden rounded-3xl bg-active p-6 shadow-elegant sm:p-8">
+      <div className="ornament-pattern absolute inset-0 opacity-30" />
+      <div className="relative">
+        <div className="mb-4 flex items-center gap-3">
+          <span className="text-3xl">{doa.emoji}</span>
+          <div>
+            {badge && (
+              <span className="inline-block rounded-full bg-accent/90 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-accent-foreground">
+                {badge}
+              </span>
+            )}
+            <h2 className="font-display text-2xl font-semibold text-primary-foreground sm:text-3xl">
+              {doa.title}
+            </h2>
+            <p className="text-sm text-primary-foreground/70">{doa.subtitle}</p>
+          </div>
+        </div>
+        <div className="space-y-3 text-[15px] leading-relaxed text-primary-foreground/95">
+          {doa.body.split("\n\n").map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
