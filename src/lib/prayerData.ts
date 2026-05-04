@@ -447,9 +447,24 @@ Wafatkan kami dalam keadaan beriman, mengucap kalimat tauhid, dan dalam ridha-Mu
 Berikan kami keselamatan dunia dan akhirat, kumpulkan kami bersama keluarga di surga-Mu yang tertinggi, bersama para nabi, shiddiqin, syuhada, dan orang-orang sholeh."`,
 };
 
+export const DOA_SERIBU_DINAR: DoaItem = {
+  id: "seribu-dinar",
+  title: "Ayat Seribu Dinar",
+  subtitle: "QS. At-Talaq: 2–3",
+  emoji: "💎",
+  body: `وَمَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجًا ۝ وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ ۚ إِنَّ اللَّهَ بَالِغُ أَمْرِهِ ۚ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا
+
+"Wa man yattaqillaha yaj'al lahu makhraja. Wa yarzuqhu min haitsu la yahtasib. Wa man yatawakkal 'alallahi fa huwa hasbuh. Innallaha balighu amrih, qad ja'alallahu likulli syai'in qadra."
+
+"Barangsiapa bertakwa kepada Allah, niscaya Dia akan membukakan jalan keluar baginya, dan memberinya rezeki dari arah yang tidak disangka-sangkanya. Dan barangsiapa bertawakal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya. Sesungguhnya Allah melaksanakan urusan-Nya. Sungguh, Allah telah mengadakan ketentuan bagi setiap sesuatu."
+
+(QS. At-Talaq: 2–3)`,
+};
+
 export const DOA_UNIVERSAL: DoaItem[] = [
   DOA_ORANG_TUA,
   DOA_RIZQI,
+  DOA_SERIBU_DINAR,
   DOA_KETURUNAN,
   DOA_ISTIQOMAH,
   DOA_SAPU_JAGAT,
