@@ -4,7 +4,7 @@ import { useAdzanAlert } from "@/hooks/useAdzanAlert";
 import { useChecklist } from "@/hooks/useChecklist";
 import { PrayerSchedule } from "@/components/PrayerSchedule";
 import { DoaCard } from "@/components/DoaCard";
-import { DzikirCard } from "@/components/DzikirCard";
+import { DzikirCard, DzikirPenutupCard } from "@/components/DzikirCard";
 import {
   DOA_BANGUN_TIDUR,
   DOA_PAGI,
