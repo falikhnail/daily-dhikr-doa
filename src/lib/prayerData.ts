@@ -135,3 +135,153 @@ Jaga keluargaku, bahagiakan istriku, dan lindungi anak kami dalam kandungan.
 
 Jadikan aku pribadi yang istiqamah, bijak dalam mengambil keputusan, dan selamat dari segala fitnah.`,
 };
+
+export const DOA_DHUHA: DoaItem = {
+  id: "dhuha",
+  title: "Doa Sholat Dhuha",
+  subtitle: "Memohon rezeki & keberkahan",
+  emoji: "☀️",
+  body: `Ya Allah, dengan sholat dhuha ini aku memohon rezeki dari-Mu.
+
+Jika rezekiku jauh maka dekatkanlah, jika sulit maka mudahkanlah, jika sedikit maka berkahilah.
+
+Ampuni aku, kedua orang tuaku, keluargaku, kakek nenekku, dan mertua-mertuaku.
+
+Berkahilah pekerjaanku dan karierku.
+
+Jaga istriku dan anak kami dalam kandungan, sehatkan dan lindungi mereka.
+
+Jadikan aku hamba yang bersyukur, istiqamah, dan selalu dalam lindungan-Mu.`,
+};
+
+export const DOA_SETELAH_DZUHUR: DoaItem = {
+  id: "dzuhur",
+  title: "Doa Setelah Sholat Dzuhur",
+  subtitle: "Pertengahan hari",
+  emoji: "🕌",
+  body: `Ya Allah, di pertengahan hari ini aku memohon ampunan-Mu.
+
+Ampunilah seluruh dosa kami.
+
+Perbaikilah langkahku jika aku melakukan kesalahan.
+
+Kuatkan aku untuk melanjutkan hari ini dengan kebaikan.
+
+Berkahilah waktuku, lindungi aku dari fitnah, dan bimbing aku dalam setiap keputusan.
+
+Jaga istriku dan anak kami dalam kandungan, dan limpahkan keselamatan bagi kami semua di dunia dan akhirat.`,
+};
+
+export const DOA_SIANG: DoaItem = {
+  id: "siang",
+  title: "Doa Siang Hari",
+  subtitle: "Kekuatan & kesabaran",
+  emoji: "🌞",
+  body: `Ya Allah, berikan aku kekuatan dan kesabaran dalam menjalani hari ini.
+
+Lapangkan rezekiku dan berkahilah setiap usaha yang aku lakukan.
+
+Jauhkan aku dari kelelahan yang sia-sia dan keputusan yang salah.
+
+Lindungi aku dan keluargaku dari segala keburukan.`,
+};
+
+export const DOA_SETELAH_ASHAR: DoaItem = {
+  id: "ashar",
+  title: "Doa Setelah Sholat Ashar",
+  subtitle: "Perlindungan di sisa hari",
+  emoji: "🕌",
+  body: `Ya Allah, aku memohon perlindungan di sisa hari ini.
+
+Ampuni dosa-dosaku dan dosa keluargaku.
+
+Jadikan aku tetap istiqamah dan kuat dalam iman.
+
+Jauhkan aku dari fitnah dan kesalahan.
+
+Jaga istriku dan anak kami dalam kandungan, dan berikan kami keberkahan dalam hidup.`,
+};
+
+export const DOA_SORE: DoaItem = {
+  id: "sore",
+  title: "Doa Sore Menjelang Malam",
+  subtitle: "Syukur penutup siang",
+  emoji: "🌇",
+  body: `Ya Allah, aku bersyukur atas hari ini.
+
+Terima segala amal baikku dan ampuni kesalahanku.
+
+Berkahilah waktu yang tersisa hari ini.
+
+Berikan ketenangan hati dan pikiran.
+
+Jaga keluargaku dan lindungi kami dari segala keburukan.`,
+};
+
+export const DOA_MAGHRIB: DoaItem = {
+  id: "maghrib",
+  title: "Doa Sholat Maghrib",
+  subtitle: "Keberkahan keluarga",
+  emoji: "🌆",
+  body: `Ya Allah, ampunilah kami semua dan rahmatilah kami.
+
+Dekatkan kami kepada-Mu dan jadikan kami keluarga yang penuh keberkahan.
+
+Jaga istriku dan anak kami dalam kandungan.
+
+Berikan kami keselamatan di dunia dan akhirat.`,
+};
+
+export const DOA_ISYA: DoaItem = {
+  id: "isya",
+  title: "Doa Sholat Isya",
+  subtitle: "Perlindungan malam",
+  emoji: "🌃",
+  body: `Ya Allah, aku memohon perlindungan di malam ini.
+
+Ampuni dosa kami seluruhnya.
+
+Bersihkan hati kami dan tenangkan jiwa kami.
+
+Jaga keluargaku dan lindungi kami dari segala keburukan.
+
+Berikan kami keselamatan dunia dan akhirat serta akhir hidup yang baik.`,
+};
+
+export const DOA_SEBELUM_TIDUR: DoaItem = {
+  id: "tidur",
+  title: "Doa Sebelum Tidur",
+  subtitle: "Menyerahkan diri pada-Nya",
+  emoji: "🌙",
+  body: `Ya Allah, aku serahkan diriku kepada-Mu malam ini.
+
+Ampuni dosa-dosaku dan dosa keluargaku.
+
+Lindungi aku dari gangguan dan mimpi buruk.
+
+Jaga istriku dan anak kami dalam kandungan.
+
+Berikan aku istirahat yang cukup dan bangunkan aku dalam kebaikan.`,
+};
+
+export const DOA_TAHAJUD: DoaItem = {
+  id: "tahajud",
+  title: "Doa Tahajud",
+  subtitle: "Sepertiga malam terakhir",
+  emoji: "🌌",
+  body: `Ya Allah, di sepertiga malam ini aku datang memohon ampunan-Mu.
+
+Ampuni seluruh dosa kami, terimalah taubat kami.
+
+Berikan aku rezeki yang halal, luas, dan berkah.
+
+Mudahkan karierku dan jadikan aku bermanfaat.
+
+Jaga istriku dan bahagiakan dia.
+
+Lindungi anak kami dalam kandungan, sempurnakan penciptaannya dan jadikan ia anak yang sholeh/sholehah.
+
+Jadikan aku istiqamah dalam iman, tepat dalam keputusan, dan selamat dari segala fitnah.
+
+Berikan kami keselamatan dunia dan akhirat, dan wafatkan kami dalam keadaan husnul khatimah.`,
+};
