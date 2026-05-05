@@ -143,6 +143,12 @@ export interface DoaItem {
   subtitle: string;
   body: string;
   emoji: string;
+  /**
+   * Optional Latin transliteration for each Arabic paragraph in `body`,
+   * in the same order as the Arabic paragraphs appear. Rendered under
+   * the Arabic text to help readers who cannot read Arabic script.
+   */
+  latin?: string[];
 }
 
 export const DOA_BANGUN_TIDUR: DoaItem = {
@@ -373,6 +379,7 @@ export const DOA_ORANG_TUA: DoaItem = {
 Panjangkan umur mereka dalam ketaatan, sehatkan jasmani dan rohani mereka, lapangkan rezeki mereka, dan jadikan akhir hidup mereka husnul khatimah.
 
 Bagi yang telah tiada, lapangkan kuburnya, terangi dengan cahaya-Mu, dan tempatkan mereka di surga-Mu yang tertinggi."`,
+  latin: ["Rabbighfirli wa liwalidayya warhamhuma kama rabbayani shaghira"],
 };
 
 export const DOA_SAPU_JAGAT: DoaItem = {
@@ -385,6 +392,7 @@ export const DOA_SAPU_JAGAT: DoaItem = {
 "Ya Rabb kami, berikanlah kami kebaikan di dunia dan kebaikan di akhirat, dan lindungilah kami dari siksa api neraka."
 
 (QS. Al-Baqarah: 201)`,
+  latin: ["Rabbana atina fid-dunya hasanah, wa fil akhirati hasanah, waqina 'adzaban-nar"],
 };
 
 export const DOA_RIZQI: DoaItem = {
@@ -401,6 +409,7 @@ Jika rezekiku jauh, dekatkanlah. Jika sulit, mudahkanlah. Jika sedikit, perbanya
 Cukupkan aku dengan yang halal sehingga aku tidak butuh kepada yang haram, dan cukupkan aku dengan karunia-Mu sehingga aku tidak bergantung kepada selain-Mu.
 
 Mudahkan karierku, lancarkan usahaku, dan jadikan setiap rezekiku bermanfaat bagi keluargaku dan sesama."`,
+  latin: ["Allahumma inni as'aluka rizqan halalan thayyiban mubarakan"],
 };
 
 export const DOA_KETURUNAN: DoaItem = {
@@ -417,6 +426,7 @@ export const DOA_KETURUNAN: DoaItem = {
 Ya Allah, jaga istriku dalam kesehatan dan kebahagiaan. Sempurnakan penciptaan anak kami dalam kandungan, sehatkan ia, dan jadikan ia anak yang sholeh/sholehah, cerdas, berakhlak mulia, dan menjadi penyejuk mata kami.
 
 Mudahkan persalinannya, dan jadikan keluarga kami keluarga yang sakinah, mawaddah, wa rahmah.`,
+  latin: ["Rabbana hab lana min azwajina wa dzurriyatina qurrata a'yunin waj'alna lil-muttaqina imama"],
 };
 
 export const DOA_ISTIQOMAH: DoaItem = {
@@ -431,6 +441,7 @@ export const DOA_ISTIQOMAH: DoaItem = {
 Ya Allah, bimbing aku dalam setiap keputusan. Tunjukkan mana yang benar dan mudahkan aku untuk mengikutinya. Tunjukkan mana yang salah dan jauhkan aku darinya.
 
 Lindungi aku dari fitnah yang terlihat maupun tersembunyi. Jadikan aku pribadi yang istiqamah, jujur, dan amanah."`,
+  latin: ["Ya muqallibal qulub, tsabbit qalbi 'ala dinik"],
 };
 
 export const DOA_HUSNUL_KHATIMAH: DoaItem = {
@@ -445,6 +456,7 @@ export const DOA_HUSNUL_KHATIMAH: DoaItem = {
 Wafatkan kami dalam keadaan beriman, mengucap kalimat tauhid, dan dalam ridha-Mu.
 
 Berikan kami keselamatan dunia dan akhirat, kumpulkan kami bersama keluarga di surga-Mu yang tertinggi, bersama para nabi, shiddiqin, syuhada, dan orang-orang sholeh."`,
+  latin: ["Allahumma ikhtim lana bi husnil khatimah"],
 };
 
 export const DOA_SERIBU_DINAR: DoaItem = {
@@ -475,6 +487,9 @@ Maka sesungguhnya bersama kesulitan ada kemudahan. Sesungguhnya bersama kesulita
 Maka apabila engkau telah selesai (dari suatu urusan), tetaplah bekerja keras (untuk urusan yang lain), dan hanya kepada Tuhanmulah engkau berharap."
 
 (QS. Al-Insyirah: 1–8)`,
+  latin: [
+    "Alam nasyrah laka shadrak. Wa wadha'na 'anka wizrak. Alladzi anqadha zhahrak. Wa rafa'na laka dzikrak. Fa inna ma'al 'usri yusra. Inna ma'al 'usri yusra. Fa idza faraghta fanshab. Wa ila Rabbika farghab",
+  ],
 };
 
 export const DOA_BAQARAH_286: DoaItem = {
@@ -493,6 +508,9 @@ Ya Rabb kami, janganlah Engkau pikulkan kepada kami apa yang tidak sanggup kami 
 Maafkanlah kami, ampunilah kami, dan rahmatilah kami. Engkaulah pelindung kami, maka tolonglah kami menghadapi kaum yang kafir."
 
 (QS. Al-Baqarah: 286 — penutup)`,
+  latin: [
+    "Rabbana la tu'akhidzna in nasina aw akhtha'na. Rabbana wa la tahmil 'alaina ishran kama hamaltahu 'aladzina min qablina. Rabbana wa la tuhammilna ma la thaqata lana bih, wa'fu 'anna waghfir lana warhamna, anta maulana fanshurna 'alal qaumil kafirin",
+  ],
 };
 
 export const DOA_SHOLAWAT: DoaItem = {
@@ -505,6 +523,9 @@ export const DOA_SHOLAWAT: DoaItem = {
 "Ya Allah, limpahkanlah sholawat kepada Nabi Muhammad ﷺ dan keluarga beliau, sebagaimana Engkau telah memberikan sholawat kepada Nabi Ibrahim dan keluarganya.
 
 Berkahilah Nabi Muhammad ﷺ dan keluarganya, sebagaimana Engkau telah memberkahi Nabi Ibrahim dan keluarganya, di seluruh alam. Sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."`,
+  latin: [
+    "Allahumma shalli 'ala Muhammad wa 'ala ali Muhammad, kama shallaita 'ala Ibrahim wa 'ala ali Ibrahim, wa barik 'ala Muhammad wa 'ala ali Muhammad, kama barakta 'ala Ibrahim wa 'ala ali Ibrahim, fil 'alamina innaka hamidun majid",
+  ],
 };
 
 export const DOA_WAQIAH: DoaItem = {
@@ -525,6 +546,9 @@ Pembuka:
 "Apabila terjadi hari Kiamat, tidak seorang pun dapat mendustakan kejadiannya. (Kejadian itu) merendahkan (satu golongan) dan meninggikan (golongan yang lain)."
 
 (Lanjutkan membaca surat hingga selesai dari mushaf Anda.)`,
+  latin: [
+    "Bismillahirrahmanirrahim. Idza waqa'atil waqi'ah. Laisa liwaq'atiha kadzibah. Khafidhatun rafi'ah",
+  ],
 };
 export const DOA_UNIVERSAL: DoaItem[] = [
   DOA_ORANG_TUA,
