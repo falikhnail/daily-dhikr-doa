@@ -25,6 +25,7 @@ import {
 } from "@/lib/prayerData";
 import { Bell, BellOff, MapPin, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PushToggle } from "@/components/PushToggle";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
@@ -106,15 +107,18 @@ const Index = () => {
                 Teman ibadah dan produktivitasmu — dzikir & doa muncul tepat waktu.
               </p>
             </div>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setSoundOn((s) => !s)}
-              className="shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
-              aria-label="Toggle suara"
-            >
-              {soundOn ? <Bell className="h-5 w-5" /> : <BellOff className="h-5 w-5" />}
-            </Button>
+            <div className="flex shrink-0 items-center gap-2">
+              <PushToggle />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setSoundOn((s) => !s)}
+                className="shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                aria-label="Toggle suara"
+              >
+                {soundOn ? <Bell className="h-5 w-5" /> : <BellOff className="h-5 w-5" />}
+              </Button>
+            </div>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-primary-foreground/80">
