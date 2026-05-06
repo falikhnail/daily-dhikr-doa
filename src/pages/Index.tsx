@@ -33,6 +33,7 @@ const Index = () => {
   const [now, setNow] = useState(new Date());
   const [soundOn, setSoundOn] = useState(true);
   const { checked, toggle } = useChecklist();
+  const { enabled: dzikirOn, toggle: toggleDzikir } = useDzikirReminder();
 
   useEffect(() => {
     const i = setInterval(() => setNow(new Date()), 30000);
