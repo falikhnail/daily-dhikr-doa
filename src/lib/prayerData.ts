@@ -118,6 +118,13 @@ export const DZIKIR_PENUTUP: DzikirItem[] = [
 // Dzikir khusus pagi (setelah Subuh) & sore (setelah Ashar)
 export const DZIKIR_PAGI_SORE: DzikirItem[] = [
   {
+    arabic: "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+    latin: "Allahumma Anta Rabbi la ilaha illa Anta, khalaqtani wa ana 'abduka, wa ana 'ala 'ahdika wa wa'dika mastatha'tu, a'udzu bika min syarri ma shana'tu, abu'u laka bi ni'matika 'alayya, wa abu'u bi dzanbi faghfirli, fa innahu la yaghfirudz-dzunuba illa Anta",
+    count: 1,
+    meaning:
+      "Sayyidul Istighfar — Ya Allah, Engkau Tuhanku, tiada Tuhan selain Engkau. Engkau ciptakan aku dan aku hamba-Mu. Aku berada di atas janji-Mu semampuku. Aku berlindung kepada-Mu dari keburukan amalku. Aku akui nikmat-Mu kepadaku, dan aku akui dosaku, maka ampunilah aku, sesungguhnya tiada yang mengampuni dosa selain Engkau. (HR. Bukhari — siapa membacanya pagi/sore dengan yakin lalu wafat di hari itu, ia masuk surga)",
+  },
+  {
     arabic: "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
     latin: "Bismillahilladzi la yadurru ma'asmihi syai'un fil ardhi wa la fis-sama'i wa huwas-sami'ul 'alim",
     count: 3,
