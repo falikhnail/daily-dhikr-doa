@@ -142,6 +142,7 @@ const Index = () => {
                 title={mulkOn ? "Pengingat Al-Mulk: ON (20:00)" : "Pengingat Al-Mulk: OFF"}
               >
                 <BookOpen className="h-5 w-5" />
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
