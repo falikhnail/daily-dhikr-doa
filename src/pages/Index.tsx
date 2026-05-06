@@ -27,6 +27,9 @@ import { Bell, BellOff, MapPin, Moon, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
 import { useDzikirReminder } from "@/hooks/useDzikirReminder";
+import { AlMulkDialog } from "@/components/AlMulkDialog";
+import { useAlMulkReminder } from "@/hooks/useAlMulkReminder";
+import { BookOpen } from "lucide-react";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
@@ -34,6 +37,7 @@ const Index = () => {
   const [soundOn, setSoundOn] = useState(true);
   const { checked, toggle } = useChecklist();
   const { enabled: dzikirOn, toggle: toggleDzikir } = useDzikirReminder();
+  const { enabled: mulkOn, toggle: toggleMulk } = useAlMulkReminder();
 
   useEffect(() => {
     const i = setInterval(() => setNow(new Date()), 30000);
@@ -124,6 +128,20 @@ const Index = () => {
                 title={dzikirOn ? "Pengingat dzikir pagi/sore: ON (06:00 & 16:30)" : "Pengingat dzikir pagi/sore: OFF"}
               >
                 <Sparkles className="h-5 w-5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleMulk}
+                className={
+                  mulkOn
+                    ? "shrink-0 rounded-full bg-accent/30 text-accent-foreground hover:bg-accent/40"
+                    : "shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                }
+                aria-label="Toggle pengingat Surah Al-Mulk"
+                title={mulkOn ? "Pengingat Al-Mulk: ON (20:00)" : "Pengingat Al-Mulk: OFF"}
+              >
+                <BookOpen className="h-5 w-5" />
               </Button>
               <Button
                 variant="ghost"
@@ -284,6 +302,11 @@ const Index = () => {
             </p>
           </div>
         )}
+
+        {/* Surah Al-Mulk — selalu tersedia, terpisah dari daftar dzikir/doa */}
+        <section>
+          <AlMulkDialog />
+        </section>
 
         <footer className="pt-6 text-center text-xs text-muted-foreground">
           <p className="font-arabic text-lg text-primary/70">رَبِّ زِدْنِي عِلْمًا</p>
