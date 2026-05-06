@@ -301,6 +301,7 @@ const Index = () => {
               Belum ada doa terjadwal. Pengingat akan muncul saat masuk waktunya.
             </p>
           </div>
+        )}
 
         {/* Surah Al-Mulk — selalu tersedia, terpisah dari daftar dzikir/doa */}
         <section>
