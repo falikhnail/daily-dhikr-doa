@@ -27,6 +27,9 @@ import { Bell, BellOff, MapPin, Moon, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
 import { useDzikirReminder } from "@/hooks/useDzikirReminder";
+import { AlMulkDialog } from "@/components/AlMulkDialog";
+import { useAlMulkReminder } from "@/hooks/useAlMulkReminder";
+import { BookOpen } from "lucide-react";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
