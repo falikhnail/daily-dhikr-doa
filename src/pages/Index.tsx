@@ -37,6 +37,7 @@ const Index = () => {
   const [soundOn, setSoundOn] = useState(true);
   const { checked, toggle } = useChecklist();
   const { enabled: dzikirOn, toggle: toggleDzikir } = useDzikirReminder();
+  const { enabled: mulkOn, toggle: toggleMulk } = useAlMulkReminder();
 
   useEffect(() => {
     const i = setInterval(() => setNow(new Date()), 30000);
