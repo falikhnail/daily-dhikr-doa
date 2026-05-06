@@ -23,9 +23,10 @@ import {
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
-import { Bell, BellOff, MapPin, Moon } from "lucide-react";
+import { Bell, BellOff, MapPin, Moon, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
+import { useDzikirReminder } from "@/hooks/useDzikirReminder";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
