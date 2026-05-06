@@ -114,6 +114,20 @@ const Index = () => {
               <Button
                 variant="ghost"
                 size="icon"
+                onClick={toggleDzikir}
+                className={
+                  dzikirOn
+                    ? "shrink-0 rounded-full bg-accent/30 text-accent-foreground hover:bg-accent/40"
+                    : "shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                }
+                aria-label="Toggle pengingat dzikir pagi & sore"
+                title={dzikirOn ? "Pengingat dzikir pagi/sore: ON (06:00 & 16:30)" : "Pengingat dzikir pagi/sore: OFF"}
+              >
+                <Sparkles className="h-5 w-5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
                 onClick={() => setSoundOn((s) => !s)}
                 className="shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
                 aria-label="Toggle suara"
