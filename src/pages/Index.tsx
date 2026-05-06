@@ -23,15 +23,17 @@ import {
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
-import { Bell, BellOff, MapPin, Moon } from "lucide-react";
+import { Bell, BellOff, MapPin, Moon, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
+import { useDzikirReminder } from "@/hooks/useDzikirReminder";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
   const [now, setNow] = useState(new Date());
   const [soundOn, setSoundOn] = useState(true);
   const { checked, toggle } = useChecklist();
+  const { enabled: dzikirOn, toggle: toggleDzikir } = useDzikirReminder();
 
   useEffect(() => {
     const i = setInterval(() => setNow(new Date()), 30000);
@@ -109,6 +111,20 @@ const Index = () => {
             </div>
             <div className="flex shrink-0 items-center gap-2">
               <PushToggle />
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleDzikir}
+                className={
+                  dzikirOn
+                    ? "shrink-0 rounded-full bg-accent/30 text-accent-foreground hover:bg-accent/40"
+                    : "shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                }
+                aria-label="Toggle pengingat dzikir pagi & sore"
+                title={dzikirOn ? "Pengingat dzikir pagi/sore: ON (06:00 & 16:30)" : "Pengingat dzikir pagi/sore: OFF"}
+              >
+                <Sparkles className="h-5 w-5" />
+              </Button>
               <Button
                 variant="ghost"
                 size="icon"
