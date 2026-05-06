@@ -466,11 +466,12 @@ export const DOA_SERIBU_DINAR: DoaItem = {
   emoji: "💎",
   body: `وَمَنْ يَتَّقِ اللَّهَ يَجْعَلْ لَهُ مَخْرَجًا ۝ وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ ۚ إِنَّ اللَّهَ بَالِغُ أَمْرِهِ ۚ قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا
 
-"Wa man yattaqillaha yaj'al lahu makhraja. Wa yarzuqhu min haitsu la yahtasib. Wa man yatawakkal 'alallahi fa huwa hasbuh. Innallaha balighu amrih, qad ja'alallahu likulli syai'in qadra."
-
 "Barangsiapa bertakwa kepada Allah, niscaya Dia akan membukakan jalan keluar baginya, dan memberinya rezeki dari arah yang tidak disangka-sangkanya. Dan barangsiapa bertawakal kepada Allah, niscaya Allah akan mencukupkan (keperluan)nya. Sesungguhnya Allah melaksanakan urusan-Nya. Sungguh, Allah telah mengadakan ketentuan bagi setiap sesuatu."
 
 (QS. At-Talaq: 2–3)`,
+  latin: [
+    "Wa man yattaqillaha yaj'al lahu makhraja. Wa yarzuqhu min haitsu la yahtasib. Wa man yatawakkal 'alallahi fa huwa hasbuh. Innallaha balighu amrih, qad ja'alallahu likulli syai'in qadra",
+  ],
 };
 
 export const DOA_INSYIRAH: DoaItem = {
