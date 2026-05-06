@@ -132,6 +132,19 @@ const Index = () => {
               <Button
                 variant="ghost"
                 size="icon"
+                onClick={toggleMulk}
+                className={
+                  mulkOn
+                    ? "shrink-0 rounded-full bg-accent/30 text-accent-foreground hover:bg-accent/40"
+                    : "shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                }
+                aria-label="Toggle pengingat Surah Al-Mulk"
+                title={mulkOn ? "Pengingat Al-Mulk: ON (20:00)" : "Pengingat Al-Mulk: OFF"}
+              >
+                <BookOpen className="h-5 w-5" />
+              <Button
+                variant="ghost"
+                size="icon"
                 onClick={() => setSoundOn((s) => !s)}
                 className="shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
                 aria-label="Toggle suara"
