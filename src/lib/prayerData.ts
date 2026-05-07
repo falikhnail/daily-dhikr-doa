@@ -572,7 +572,6 @@ export const DOA_UNIVERSAL: DoaItem[] = [
 
 // Doa khusus malam (setelah Maghrib & Isya)
 export const DOA_MALAM: DoaItem[] = [
-  DOA_WAQIAH,
   DOA_SHOLAWAT,
 ];
 
