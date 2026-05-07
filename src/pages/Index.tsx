@@ -23,14 +23,18 @@ import {
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
-import { Bell, BellOff, MapPin, Moon, Sparkles } from "lucide-react";
+import { Bell, BellOff, MapPin, Moon, Sparkles, BookOpen, Sun, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
 import { useDzikirReminder } from "@/hooks/useDzikirReminder";
-import { AlMulkDialog } from "@/components/AlMulkDialog";
-import { AlWaqiahDialog } from "@/components/AlWaqiahDialog";
+import { SurahDialog } from "@/components/SurahDialog";
+import { AL_MULK, AL_MULK_INFO } from "@/lib/alMulkData";
+import { AL_WAQIAH, AL_WAQIAH_INFO } from "@/lib/alWaqiahData";
+import { YASIN, YASIN_INFO } from "@/lib/yasinData";
+import { AL_KAHFI, AL_KAHFI_INFO } from "@/lib/alKahfiData";
+import { AR_RAHMAN, AR_RAHMAN_INFO } from "@/lib/arRahmanData";
+import { AS_SAJDAH, AS_SAJDAH_INFO } from "@/lib/asSajdahData";
 import { useAlMulkReminder } from "@/hooks/useAlMulkReminder";
-import { BookOpen } from "lucide-react";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
@@ -304,10 +308,54 @@ const Index = () => {
           </div>
         )}
 
-        {/* Surah Al-Mulk — selalu tersedia, terpisah dari daftar dzikir/doa */}
-        <section className="space-y-4">
-          <AlMulkDialog />
-          <AlWaqiahDialog />
+        {/* Surah pilihan — selalu tersedia, terpisah dari daftar dzikir/doa */}
+        <section className="space-y-3">
+          <div className="flex items-end justify-between">
+            <h2 className="font-display text-xl font-semibold text-primary">Surah Pilihan</h2>
+            <span className="text-xs text-muted-foreground">Tap untuk membuka</span>
+          </div>
+          <SurahDialog
+            info={AL_MULK_INFO}
+            ayat={AL_MULK}
+            category="Bacaan Malam"
+            icon={Moon}
+            closing="Semoga Allah menjadikannya penyelamat di alam kubur. Aamiin."
+          />
+          <SurahDialog
+            info={AL_WAQIAH_INFO}
+            ayat={AL_WAQIAH}
+            category="Pembuka Rezeki"
+            icon={Sparkles}
+            closing="Semoga Allah melapangkan rezeki yang halal dan berkah. Aamiin."
+          />
+          <SurahDialog
+            info={YASIN_INFO}
+            ayat={YASIN}
+            category="Jantung Al-Qur'an"
+            icon={Heart}
+            closing="Semoga Allah memudahkan segala urusan dan husnul khatimah. Aamiin."
+          />
+          <SurahDialog
+            info={AL_KAHFI_INFO}
+            ayat={AL_KAHFI}
+            category="Sunnah Hari Jumat"
+            icon={Sun}
+            closing="Semoga Allah melindungi dari fitnah Dajjal. Aamiin."
+          />
+          <SurahDialog
+            info={AR_RAHMAN_INFO}
+            ayat={AR_RAHMAN}
+            category="Pengantin Al-Qur'an"
+            icon={Star}
+            closing="Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
+          />
+          <SurahDialog
+            info={AS_SAJDAH_INFO}
+            ayat={AS_SAJDAH}
+            category="Sebelum Tidur"
+            icon={BookOpen}
+            closing="Semoga Allah menerima dan memberkahi bacaan ini. Aamiin."
+          />
         </section>
 
         <footer className="pt-6 text-center text-xs text-muted-foreground">
