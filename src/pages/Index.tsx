@@ -23,14 +23,18 @@ import {
   PRAYERS,
   type PrayerKey,
 } from "@/lib/prayerData";
-import { Bell, BellOff, MapPin, Moon, Sparkles } from "lucide-react";
+import { Bell, BellOff, MapPin, Moon, Sparkles, BookOpen, Sun, Heart, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
 import { useDzikirReminder } from "@/hooks/useDzikirReminder";
-import { AlMulkDialog } from "@/components/AlMulkDialog";
-import { AlWaqiahDialog } from "@/components/AlWaqiahDialog";
+import { SurahDialog } from "@/components/SurahDialog";
+import { AL_MULK, AL_MULK_INFO } from "@/lib/alMulkData";
+import { AL_WAQIAH, AL_WAQIAH_INFO } from "@/lib/alWaqiahData";
+import { YASIN, YASIN_INFO } from "@/lib/yasinData";
+import { AL_KAHFI, AL_KAHFI_INFO } from "@/lib/alKahfiData";
+import { AR_RAHMAN, AR_RAHMAN_INFO } from "@/lib/arRahmanData";
+import { AS_SAJDAH, AS_SAJDAH_INFO } from "@/lib/asSajdahData";
 import { useAlMulkReminder } from "@/hooks/useAlMulkReminder";
-import { BookOpen } from "lucide-react";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
