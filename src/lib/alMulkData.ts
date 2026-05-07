@@ -195,6 +195,7 @@ export const AL_MULK_INFO = {
   name: "Al-Mulk",
   arabicName: "الملك",
   meaning: "Kerajaan",
+  number: 67,
   ayatCount: 30,
   virtue:
     "Surah ini disebut Al-Munjiyah (penyelamat) karena memberi syafaat hingga pembacanya diampuni. Rasulullah ﷺ tidak tidur sebelum membacanya (HR. Tirmidzi).",

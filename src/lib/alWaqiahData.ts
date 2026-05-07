@@ -111,6 +111,7 @@ export const AL_WAQIAH_INFO = {
   name: "Al-Waqi'ah",
   arabicName: "الواقعة",
   meaning: "Hari Kiamat",
+  number: 56,
   ayatCount: 96,
   virtue:
     "Rasulullah ﷺ bersabda: 'Barangsiapa membaca surat Al-Waqi'ah pada setiap malam, maka ia tidak akan ditimpa kefakiran selama-lamanya.' (HR. Al-Baihaqi)",
