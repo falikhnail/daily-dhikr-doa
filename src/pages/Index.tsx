@@ -28,6 +28,7 @@ import { Button } from "@/components/ui/button";
 import { PushToggle } from "@/components/PushToggle";
 import { useDzikirReminder } from "@/hooks/useDzikirReminder";
 import { AlMulkDialog } from "@/components/AlMulkDialog";
+import { AlWaqiahDialog } from "@/components/AlWaqiahDialog";
 import { useAlMulkReminder } from "@/hooks/useAlMulkReminder";
 import { BookOpen } from "lucide-react";
 
@@ -304,8 +305,9 @@ const Index = () => {
         )}
 
         {/* Surah Al-Mulk — selalu tersedia, terpisah dari daftar dzikir/doa */}
-        <section>
+        <section className="space-y-4">
           <AlMulkDialog />
+          <AlWaqiahDialog />
         </section>
 
         <footer className="pt-6 text-center text-xs text-muted-foreground">
