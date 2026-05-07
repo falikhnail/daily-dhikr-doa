@@ -308,10 +308,54 @@ const Index = () => {
           </div>
         )}
 
-        {/* Surah Al-Mulk — selalu tersedia, terpisah dari daftar dzikir/doa */}
-        <section className="space-y-4">
-          <AlMulkDialog />
-          <AlWaqiahDialog />
+        {/* Surah pilihan — selalu tersedia, terpisah dari daftar dzikir/doa */}
+        <section className="space-y-3">
+          <div className="flex items-end justify-between">
+            <h2 className="font-display text-xl font-semibold text-primary">Surah Pilihan</h2>
+            <span className="text-xs text-muted-foreground">Tap untuk membuka</span>
+          </div>
+          <SurahDialog
+            info={AL_MULK_INFO}
+            ayat={AL_MULK}
+            category="Bacaan Malam"
+            icon={Moon}
+            closing="Semoga Allah menjadikannya penyelamat di alam kubur. Aamiin."
+          />
+          <SurahDialog
+            info={AL_WAQIAH_INFO}
+            ayat={AL_WAQIAH}
+            category="Pembuka Rezeki"
+            icon={Sparkles}
+            closing="Semoga Allah melapangkan rezeki yang halal dan berkah. Aamiin."
+          />
+          <SurahDialog
+            info={YASIN_INFO}
+            ayat={YASIN}
+            category="Jantung Al-Qur'an"
+            icon={Heart}
+            closing="Semoga Allah memudahkan segala urusan dan husnul khatimah. Aamiin."
+          />
+          <SurahDialog
+            info={AL_KAHFI_INFO}
+            ayat={AL_KAHFI}
+            category="Sunnah Hari Jumat"
+            icon={Sun}
+            closing="Semoga Allah melindungi dari fitnah Dajjal. Aamiin."
+          />
+          <SurahDialog
+            info={AR_RAHMAN_INFO}
+            ayat={AR_RAHMAN}
+            category="Pengantin Al-Qur'an"
+            icon={Star}
+            closing="Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
+          />
+          <SurahDialog
+            info={AS_SAJDAH_INFO}
+            ayat={AS_SAJDAH}
+            category="Sebelum Tidur"
+            icon={BookOpen}
+            closing="Semoga Allah menerima dan memberkahi bacaan ini. Aamiin."
+          />
         </section>
 
         <footer className="pt-6 text-center text-xs text-muted-foreground">
