@@ -1,5 +1,5 @@
 // Surah As-Sajdah (32) — 30 ayat
-// Sumber: api.alquran.cloud
+// Sumber: equran.id (Latin & terjemahan Indonesia)
 
 export interface SurahAyat {
   no: number;
@@ -9,186 +9,36 @@ export interface SurahAyat {
 }
 
 export const AS_SAJDAH: SurahAyat[] = [
-  {
-    "no": 1,
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ الٓمٓ",
-    "latin": "Alif-Laaam-Meeem",
-    "translation": "Alif Laam Miim"
-  },
-  {
-    "no": 2,
-    "arabic": "تَنزِيلُ ٱلْكِتَٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ ٱلْعَٰلَمِينَ",
-    "latin": "Tanzeelul Kitaabi 'laaraiba feehi mir rabbil 'aalameen",
-    "translation": "Turunnya Al-Quran yang tidak ada keraguan di dalamnya, (adalah) dari Tuhan semesta alam."
-  },
-  {
-    "no": 3,
-    "arabic": "أَمْ يَقُولُونَ ٱفْتَرَىٰهُ ۚ بَلْ هُوَ ٱلْحَقُّ مِن رَّبِّكَ لِتُنذِرَ قَوْمًۭا مَّآ أَتَىٰهُم مِّن نَّذِيرٍۢ مِّن قَبْلِكَ لَعَلَّهُمْ يَهْتَدُونَ",
-    "latin": "Am yaqooloonaf taraahu bal huwal haqqu mir rabbika litunzira qawma maaa ataahum min nazeerim min qablika la'allahum yahtadoon",
-    "translation": "Tetapi mengapa mereka (orang kafir) mengatakan: \"Dia Muhammad mengada-adakannya\". Sebenarnya Al-Quran itu adalah kebenaran dari Rabbmu, agar kamu memberi peringatan kepada kaum yang belum datang kepada mereka orang yang memberi peringatan sebelum kamu; mudah-mudahan mereka mendapat petunjuk."
-  },
-  {
-    "no": 4,
-    "arabic": "ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَا فِى سِتَّةِ أَيَّامٍۢ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ ۖ مَا لَكُم مِّن دُونِهِۦ مِن وَلِىٍّۢ وَلَا شَفِيعٍ ۚ أَفَلَا تَتَذَكَّرُونَ",
-    "latin": "Allaahul lazee khalaqas samaawaati wal arda wa maa bainahumaa fee sittati ayyaam;Thummas tawaa 'alal 'arsh; maa lakum min doonihee minw-wwaliyyinw-wala shafee'; afala tatazakkaroon",
-    "translation": "Allah lah yang menciptakan langit dan bumi dan apa yang ada di antara keduanya dalam enam masa, kemudian Dia bersemayam di atas 'Arsy. Tidak ada bagi kamu selain dari pada-Nya seorang penolongpun dan tidak (pula) seorang pemberi syafa'at. Maka apakah kamu tidak memperhatikan?"
-  },
-  {
-    "no": 5,
-    "arabic": "يُدَبِّرُ ٱلْأَمْرَ مِنَ ٱلسَّمَآءِ إِلَى ٱلْأَرْضِ ثُمَّ يَعْرُجُ إِلَيْهِ فِى يَوْمٍۢ كَانَ مِقْدَارُهُۥٓ أَلْفَ سَنَةٍۢ مِّمَّا تَعُدُّونَ",
-    "latin": "Yudabbirul amra minas samaaa'i ilal ardi Thumma ya'ruju ilai Thumma ya'ruju ilaihi fee yawmin kaana miqdaaruhoooo alfa sanatim mimmaa ta'uddoon",
-    "translation": "Dia mengatur urusan dari langit ke bumi, kemudian (urusan) itu naik kepada-Nya dalam satu hari yang kadarnya adalah seribu tahun menurut perhitunganmu"
-  },
-  {
-    "no": 6,
-    "arabic": "ذَٰلِكَ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ٱلْعَزِيزُ ٱلرَّحِيمُ",
-    "latin": "Zaalika 'aalimul ghaybi wa shahaadatil 'azeezur raheem",
-    "translation": "Yang demikian itu ialah Tuhan Yang mengetahui yang ghaib dan yang nyata, Yang Maha Perkasa lagi Maha Penyayang."
-  },
-  {
-    "no": 7,
-    "arabic": "ٱلَّذِىٓ أَحْسَنَ كُلَّ شَىْءٍ خَلَقَهُۥ ۖ وَبَدَأَ خَلْقَ ٱلْإِنسَٰنِ مِن طِينٍۢ",
-    "latin": "Allazee ahsana kulla shai in khalaqa; wa bada a khalqal insaani min teen",
-    "translation": "Yang membuat segala sesuatu yang Dia ciptakan sebaik-baiknya dan Yang memulai penciptaan manusia dari tanah."
-  },
-  {
-    "no": 8,
-    "arabic": "ثُمَّ جَعَلَ نَسْلَهُۥ مِن سُلَٰلَةٍۢ مِّن مَّآءٍۢ مَّهِينٍۢ",
-    "latin": "Thumma ja'ala naslahoo min sulaalatim mim maaa'immaheen",
-    "translation": "Kemudian Dia menjadikan keturunannya dari saripati air yang hina."
-  },
-  {
-    "no": 9,
-    "arabic": "ثُمَّ سَوَّىٰهُ وَنَفَخَ فِيهِ مِن رُّوحِهِۦ ۖ وَجَعَلَ لَكُمُ ٱلسَّمْعَ وَٱلْأَبْصَٰرَ وَٱلْأَفْـِٔدَةَ ۚ قَلِيلًۭا مَّا تَشْكُرُونَ",
-    "latin": "Thumma sawwaahu wa nafakha feehi mir roohihih; wa ja'ala lakumus sam'a wal-absaara wal-af'idah; taqaleelam maa tashkuroon",
-    "translation": "Kemudian Dia menyempurnakan dan meniupkan ke dalamnya roh (ciptaan)-Nya dan Dia menjadikan bagi kamu pendengaran, penglihatan dan hati; (tetapi) kamu sedikit sekali bersyukur."
-  },
-  {
-    "no": 10,
-    "arabic": "وَقَالُوٓا۟ أَءِذَا ضَلَلْنَا فِى ٱلْأَرْضِ أَءِنَّا لَفِى خَلْقٍۢ جَدِيدٍۭ ۚ بَلْ هُم بِلِقَآءِ رَبِّهِمْ كَٰفِرُونَ",
-    "latin": "Wa qaalooo 'a-izaa dalalnaa fil ardi 'a-innaa lafee khalqin jadeed; bal hum biliqaaa'i rabbihim kaafirroon",
-    "translation": "Dan mereka berkata: \"Apakah bila kami telah lenyap (hancur) dalam tanah, kami benar-benar akan berada dalam ciptaan yang baru?\" Bahkan mereka ingkar akan menemui Tuhannya."
-  },
-  {
-    "no": 11,
-    "arabic": "۞ قُلْ يَتَوَفَّىٰكُم مَّلَكُ ٱلْمَوْتِ ٱلَّذِى وُكِّلَ بِكُمْ ثُمَّ إِلَىٰ رَبِّكُمْ تُرْجَعُونَ",
-    "latin": "Qul yatawaffaakum malakul mawtil lazee wukkila bikum Thumma ilaa rabbikum turja'oon",
-    "translation": "Katakanlah: \"Malaikat maut yang diserahi untuk (mencabut nyawa)mu akan mematikanmu, kemudian hanya kepada Tuhanmulah kamu akan dikembalikan\"."
-  },
-  {
-    "no": 12,
-    "arabic": "وَلَوْ تَرَىٰٓ إِذِ ٱلْمُجْرِمُونَ نَاكِسُوا۟ رُءُوسِهِمْ عِندَ رَبِّهِمْ رَبَّنَآ أَبْصَرْنَا وَسَمِعْنَا فَٱرْجِعْنَا نَعْمَلْ صَٰلِحًا إِنَّا مُوقِنُونَ",
-    "latin": "Wa law taraaa izil mujrimoona naakisoo ru'oosihim 'inda rabbihim rabbanaaa absarnaa wa sami'naa farji'naa na'mal saalihan innaa mooqinoon",
-    "translation": "Dan, jika sekiranya kamu melihat mereka ketika orang-orang yang berdosa itu menundukkan kepalanya di hadapan Tuhannya, (mereka berkata): \"Ya Tuhan kami, kami telah melihat dan mendengar, maka kembalikanlah kami (ke dunia), kami akan mengerjakan amal saleh, sesungguhnya kami adalah orang-orang yang yakin\"."
-  },
-  {
-    "no": 13,
-    "arabic": "وَلَوْ شِئْنَا لَءَاتَيْنَا كُلَّ نَفْسٍ هُدَىٰهَا وَلَٰكِنْ حَقَّ ٱلْقَوْلُ مِنِّى لَأَمْلَأَنَّ جَهَنَّمَ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ أَجْمَعِينَ",
-    "latin": "Wa law shi'naa la-aatainaa kulla nafsin hudaahaa wa laakin haqqal qawlu minnee la amla'anna jahannama minal jinnati wannaasi ajma'een",
-    "translation": "Dan kalau Kami menghendaki niscaya Kami akan berikan kepada tiap-tiap jiwa petunjuk, akan tetapi telah tetaplah perkataan dari pada-Ku: \"Sesungguhnya akan Aku penuhi neraka jahannam itu dengan jin dan manusia bersama-sama\"."
-  },
-  {
-    "no": 14,
-    "arabic": "فَذُوقُوا۟ بِمَا نَسِيتُمْ لِقَآءَ يَوْمِكُمْ هَٰذَآ إِنَّا نَسِينَٰكُمْ ۖ وَذُوقُوا۟ عَذَابَ ٱلْخُلْدِ بِمَا كُنتُمْ تَعْمَلُونَ",
-    "latin": "Fazooqoo bimaa naseetum liqaaa'a yawminkum haaza innaa naseenaakum wa zooqoo 'azaabal khuldi bimaa kuntum ta'maloon",
-    "translation": "Maka rasailah olehmu (siksa ini) disebabkan kamu melupakan akan pertemuan dengan harimu ini. Sesungguhnya Kami telah melupakan kamu (pula) dan rasakanlah siksa yang kekal, disebabkan apa yang selalu kamu kerjakan."
-  },
-  {
-    "no": 15,
-    "arabic": "إِنَّمَا يُؤْمِنُ بِـَٔايَٰتِنَا ٱلَّذِينَ إِذَا ذُكِّرُوا۟ بِهَا خَرُّوا۟ سُجَّدًۭا وَسَبَّحُوا۟ بِحَمْدِ رَبِّهِمْ وَهُمْ لَا يَسْتَكْبِرُونَ ۩",
-    "latin": "Innamaa yu'minu bi aayaatinal lazeena izaa zukkiroo bihaa kharroo sujjadanw wa sabbahoo bihamdi rabbihim wa hum laa yastakbiroon",
-    "translation": "Sesungguhnya orang yang benar-benar percaya kepada ayat-ayat Kami adalah mereka yang apabila diperingatkan dengan ayat-ayat itu mereka segera bersujud seraya bertasbih dan memuji Rabbnya, dan lagi pula mereka tidaklah sombong."
-  },
-  {
-    "no": 16,
-    "arabic": "تَتَجَافَىٰ جُنُوبُهُمْ عَنِ ٱلْمَضَاجِعِ يَدْعُونَ رَبَّهُمْ خَوْفًۭا وَطَمَعًۭا وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ",
-    "latin": "Tatajaafaa junoobuhum 'anil madaaji'i yad'oona rabbahum khawfanw wa tama'anw wa mimmaa razaqnaahum yunfiqoon",
-    "translation": "Lambung mereka jauh dari tempat tidurnya dan mereka selalu berdoa kepada Rabbnya dengan penuh rasa takut dan harap, serta mereka menafkahkan apa apa rezeki yang Kami berikan."
-  },
-  {
-    "no": 17,
-    "arabic": "فَلَا تَعْلَمُ نَفْسٌۭ مَّآ أُخْفِىَ لَهُم مِّن قُرَّةِ أَعْيُنٍۢ جَزَآءًۢ بِمَا كَانُوا۟ يَعْمَلُونَ",
-    "latin": "Falaa ta'lamu nafsum maaa ukhfiya lahum min qurrati a'yunin jazaaa'am bimaa kaanoo ya'maloon",
-    "translation": "Tak seorangpun mengetahui berbagai nikmat yang menanti, yang indah dipandang sebagai balasan bagi mereka, atas apa yang mereka kerjakan."
-  },
-  {
-    "no": 18,
-    "arabic": "أَفَمَن كَانَ مُؤْمِنًۭا كَمَن كَانَ فَاسِقًۭا ۚ لَّا يَسْتَوُۥنَ",
-    "latin": "Afaman kaana mu'minan kaman kaana faasiqaa; laa yasta woon",
-    "translation": "Apakah orang-orang beriman itu sama dengan orang-orang yang fasik? Mereka tidak sama."
-  },
-  {
-    "no": 19,
-    "arabic": "أَمَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ فَلَهُمْ جَنَّٰتُ ٱلْمَأْوَىٰ نُزُلًۢا بِمَا كَانُوا۟ يَعْمَلُونَ",
-    "latin": "Ammal lazeena aamanoo wa 'amilus saalihaati falahum jannaatul maawa nuzulam bimaa kaanoo ya'maloon",
-    "translation": "Adapun orang-orang yang beriman dan mengerjakan amal saleh, maka bagi mereka jannah tempat kediaman, sebagai pahala terhadap apa yang mereka kerjakan."
-  },
-  {
-    "no": 20,
-    "arabic": "وَأَمَّا ٱلَّذِينَ فَسَقُوا۟ فَمَأْوَىٰهُمُ ٱلنَّارُ ۖ كُلَّمَآ أَرَادُوٓا۟ أَن يَخْرُجُوا۟ مِنْهَآ أُعِيدُوا۟ فِيهَا وَقِيلَ لَهُمْ ذُوقُوا۟ عَذَابَ ٱلنَّارِ ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
-    "latin": "Wa ammal lazeena fasaqoo famaawaahumn Naaru kullamaaa araadooo any yakhrujoo minhaaa u'eedoo feehaa wa qeela lahum zooqoo 'zaaaban Naaril lazee kuntum bihee tukazziboon",
-    "translation": "Dan adapun orang-orang yang fasik (kafir) maka tempat mereka adalah jahannam. Setiap kali mereka hendak keluar daripadanya, mereka dikembalikan ke dalamnya dan dikatakan kepada mereka: \"Rasakanlah siksa neraka yang dahulu kamu mendustakannya\"."
-  },
-  {
-    "no": 21,
-    "arabic": "وَلَنُذِيقَنَّهُم مِّنَ ٱلْعَذَابِ ٱلْأَدْنَىٰ دُونَ ٱلْعَذَابِ ٱلْأَكْبَرِ لَعَلَّهُمْ يَرْجِعُونَ",
-    "latin": "Wa lanuzeeqan nahum minal 'azaabil ladnaa doonal 'azaabil akbari la'allahum yarji'oon",
-    "translation": "Dan Sesungguhnya Kami merasakan kepada mereka sebahagian azab yang dekat (di dunia) sebelum azab yang lebih besar (di akhirat), mudah-mudahan mereka kembali (ke jalan yang benar)."
-  },
-  {
-    "no": 22,
-    "arabic": "وَمَنْ أَظْلَمُ مِمَّن ذُكِّرَ بِـَٔايَٰتِ رَبِّهِۦ ثُمَّ أَعْرَضَ عَنْهَآ ۚ إِنَّا مِنَ ٱلْمُجْرِمِينَ مُنتَقِمُونَ",
-    "latin": "Wa man azlamu mimman zukkira bi aayaati rabbihee summa a'rada 'anhaa; innaa minal mujrimeena muntaqimmon",
-    "translation": "Dan siapakah yang lebih zalim daripada orang yang telah diperingatkan dengan ayat-ayat Tuhannya, kemudian ia berpaling daripadanya? Sesungguhnya Kami akan memberikan pembalasan kepada orang-orang yang berdosa."
-  },
-  {
-    "no": 23,
-    "arabic": "وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَٰبَ فَلَا تَكُن فِى مِرْيَةٍۢ مِّن لِّقَآئِهِۦ ۖ وَجَعَلْنَٰهُ هُدًۭى لِّبَنِىٓ إِسْرَٰٓءِيلَ",
-    "latin": "Wa laqad aayainaa Moosal Kitaaba falaa takun fee miryatim mil liqaaa'ihee wa ja'alnaahu hudal li Baneee Israaa'eel",
-    "translation": "Dan Sesungguhnya Kami telah berikan kepada Musa Al-Kitab (Taurat), maka janganlah kamu (Muhammad) ragu menerima (Al-Quran itu) dan Kami jadikan Al-Kitab (Taurat) itu petunjuk bagi Bani Israil."
-  },
-  {
-    "no": 24,
-    "arabic": "وَجَعَلْنَا مِنْهُمْ أَئِمَّةًۭ يَهْدُونَ بِأَمْرِنَا لَمَّا صَبَرُوا۟ ۖ وَكَانُوا۟ بِـَٔايَٰتِنَا يُوقِنُونَ",
-    "latin": "Wa ja'alnaa minhum a'immatany yahdoona bi amrinaa lammaa sabaroo wa kaanoo bi aayaatinaa yooqinoon",
-    "translation": "Dan Kami jadikan di antara mereka itu pemimpin-pemimpin yang memberi petunjuk dengan perintah Kami ketika mereka sabar. Dan adalah mereka meyakini ayat-ayat Kami."
-  },
-  {
-    "no": 25,
-    "arabic": "إِنَّ رَبَّكَ هُوَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ فِيمَا كَانُوا۟ فِيهِ يَخْتَلِفُونَ",
-    "latin": "Inna rabbaka huwa yafsilu bainahum yawmal qiyaamati feemaa kaanoo feehi yakhtalifoon",
-    "translation": "Sesungguhnya Tuhanmu Dialah yang memberikan keputusan di antara mereka pada hari kiamat tentang apa yang selalu mereka perselisihkan padanya."
-  },
-  {
-    "no": 26,
-    "arabic": "أَوَلَمْ يَهْدِ لَهُمْ كَمْ أَهْلَكْنَا مِن قَبْلِهِم مِّنَ ٱلْقُرُونِ يَمْشُونَ فِى مَسَٰكِنِهِمْ ۚ إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ ۖ أَفَلَا يَسْمَعُونَ",
-    "latin": "Awalam yahdi lahum kam ahlaknaa min qablihim minal qurooni yamshoona fee zaalika la aayaatin afalaa yasma'oon",
-    "translation": "Dan apakah tidak menjadi petunjuk bagi mereka, berapa banyak umat sebelum mereka yang telah Kami binasakan sedangkan mereka sendiri berjalan di tempat-tempat kediaman mereka itu. Sesungguhnya pada yang demikian itu terdapat tanda-tanda (kekuasaan Allah). Maka apakah mereka tidak mendengarkan?"
-  },
-  {
-    "no": 27,
-    "arabic": "أَوَلَمْ يَرَوْا۟ أَنَّا نَسُوقُ ٱلْمَآءَ إِلَى ٱلْأَرْضِ ٱلْجُرُزِ فَنُخْرِجُ بِهِۦ زَرْعًۭا تَأْكُلُ مِنْهُ أَنْعَٰمُهُمْ وَأَنفُسُهُمْ ۖ أَفَلَا يُبْصِرُونَ",
-    "latin": "Awalam yaraw annaa nasooqul maaa'a ilal lardil juruzi fanukhriju bihee zar'an taakulu minhu an'aamuhum wa anfusuhum afalaa yubsiroon",
-    "translation": "Dan apakah mereka tidak memperhatikan, bahwasanya Kami menghalau (awan yang mengandung) air ke bumi yang tandus, lalu Kami tumbuhkan dengan air hujan itu tanaman yang daripadanya makan hewan ternak mereka dan mereka sendiri. Maka apakah mereka tidak memperhatikan?"
-  },
-  {
-    "no": 28,
-    "arabic": "وَيَقُولُونَ مَتَىٰ هَٰذَا ٱلْفَتْحُ إِن كُنتُمْ صَٰدِقِينَ",
-    "latin": "Wa yaqooloona mataa haazal fat hu in kuntum saadiqeen",
-    "translation": "Dan mereka bertanya: \"Bilakah kemenangan itu (datang) jika kamu memang orang-orang yang benar?\""
-  },
-  {
-    "no": 29,
-    "arabic": "قُلْ يَوْمَ ٱلْفَتْحِ لَا يَنفَعُ ٱلَّذِينَ كَفَرُوٓا۟ إِيمَٰنُهُمْ وَلَا هُمْ يُنظَرُونَ",
-    "latin": "Qul yawmal fat hi laa yanfa'ul lazeena kafarooo eemaanuhum wa laa hum yunzaroon",
-    "translation": "Katakanlah: \"Pada hari kemenangan itu tidak berguna bagi orang-orang kafir, iman mereka dan tidak pula mereka diberi tangguh\"."
-  },
-  {
-    "no": 30,
-    "arabic": "فَأَعْرِضْ عَنْهُمْ وَٱنتَظِرْ إِنَّهُم مُّنتَظِرُونَ",
-    "latin": "Fa a'rid 'anhum wantazir innahum muntazirron",
-    "translation": "Maka berpalinglah kamu dari mereka dan tunggulah, sesungguhnya mereka (juga) menunggu."
-  }
+  {"no": 1, "arabic": " الۤمّۤ ۗ ", "latin": "Alif lām mīm.", "translation": "Alif Lām Mīm."},
+  {"no": 2, "arabic": "تَنْزِيْلُ الْكِتٰبِ لَا رَيْبَ فِيْهِ مِنْ رَّبِّ الْعٰلَمِيْنَۗ ", "latin": "Tanzīlul-kitābi lā raiba fīhi mir rabbil-‘ālamīn(a).", "translation": "Turunnya Al-Qur’an yang tidak ada keraguan di dalamnya berasal dari Tuhan semesta alam."},
+  {"no": 3, "arabic": "اَمْ يَقُوْلُوْنَ افْتَرٰىهُ ۚ بَلْ هُوَ الْحَقُّ مِنْ رَّبِّكَ لِتُنْذِرَ قَوْمًا مَّآ اَتٰىهُمْ مِّنْ نَّذِيْرٍ مِّنْ قَبْلِكَ لَعَلَّهُمْ يَهْتَدُوْنَ", "latin": "Am yaqūlūnaftarāhu balhuwal-ḥaqqu mir rabbika litunżira qaumam mā atāhum min nażīrim min qablika la‘allahum yahtadūn(a).", "translation": "Akan tetapi, mengapa mereka (orang kafir) mengatakan, “Dia (Nabi Muhammad) telah mengada-adakannya.” Sebaliknya, Al-Qur’an itulah kebenaran (yang datang) dari Tuhanmu agar engkau memberi peringatan kepada kaum yang sama sekali belum pernah didatangi seorang pemberi peringatan sebelum engkau. (Demikian ini) agar mereka mendapat petunjuk."},
+  {"no": 4, "arabic": "اَللّٰهُ الَّذِيْ خَلَقَ السَّمٰوٰتِ وَالْاَرْضَ وَمَا بَيْنَهُمَا فِيْ سِتَّةِ اَيَّامٍ ثُمَّ اسْتَوٰى عَلَى الْعَرْشِۗ مَا لَكُمْ مِّنْ دُوْنِهٖ مِنْ وَّلِيٍّ وَّلَا شَفِيْعٍۗ  اَفَلَا تَتَذَكَّرُوْنَ", "latin": "Allāhul-lażī khalaqas-samāwāti wal-arḍa wa mā bainahumā fī sittati ayyāmin ṡummastawā ‘alal-‘arsy(i), mā lakum min dūnihī miw waliyyiw wa lā syafī‘(in), afalā tatażakkarūn(a).", "translation": "Allah adalah Zat yang menciptakan langit dan bumi serta apa yang ada di antara keduanya dalam enam masa, kemudian Dia bersemayam di atas ‘Arasy. Bagimu tidak ada seorang pun pelindung dan pemberi syafaat selain Dia. Maka, apakah kamu tidak memperhatikan?"},
+  {"no": 5, "arabic": "يُدَبِّرُ الْاَمْرَ مِنَ السَّمَاۤءِ اِلَى الْاَرْضِ ثُمَّ يَعْرُجُ اِلَيْهِ فِيْ يَوْمٍ كَانَ مِقْدَارُهٗٓ اَلْفَ سَنَةٍ مِّمَّا تَعُدُّوْنَ", "latin": "Yudabbirul-amra minas-samā'i ilal-arḍi ṡumma ya‘ruju ilaihi fī yaumin kāna miqdāruhū alfa sanatim mimmā ta‘uddūn(a).", "translation": "Dia mengatur segala urusan dari langit ke bumi, kemudian (segala urusan) itu naik kepada-Nya pada hari yang kadarnya (lamanya) adalah seribu tahun menurut perhitunganmu."},
+  {"no": 6, "arabic": "ذٰلِكَ عٰلِمُ الْغَيْبِ وَالشَّهَادَةِ الْعَزِيْزُ الرَّحِيْمُۙ ", "latin": "Żālika ‘ālimul-gaibi wasy-syahādatil-‘azīzur-raḥīm(u).", "translation": "Itu adalah (Tuhan) yang mengetahui yang gaib dan yang nyata, Yang Maha Perkasa lagi Maha Penyayang."},
+  {"no": 7, "arabic": "الَّذِيْٓ اَحْسَنَ كُلَّ شَيْءٍ خَلَقَهٗ وَبَدَاَ خَلْقَ الْاِنْسَانِ مِنْ طِيْنٍ", "latin": "Allażī aḥsana kulla syai'in khalaqahū wa bada'a khalqal-insāni min ṭīn(in).", "translation": "(Dia juga) yang memperindah segala sesuatu yang Dia ciptakan dan memulai penciptaan manusia dari tanah."},
+  {"no": 8, "arabic": "ثُمَّ جَعَلَ نَسْلَهٗ مِنْ سُلٰلَةٍ مِّنْ مَّاۤءٍ مَّهِيْنٍ ۚ ", "latin": "Ṡumma ja‘ala naslahū min sulālatim mim mā'im mahīn(in).", "translation": "Kemudian, Dia menjadikan keturunannya dari sari pati air yang hina (air mani)."},
+  {"no": 9, "arabic": "ثُمَّ سَوّٰىهُ وَنَفَخَ فِيْهِ مِنْ رُّوْحِهٖ وَجَعَلَ لَكُمُ السَّمْعَ وَالْاَبْصَارَ وَالْاَفْـِٕدَةَۗ قَلِيْلًا مَّا تَشْكُرُوْنَ ", "latin": "Ṡumma sawwāhu wa nafakha fīhi mir rūḥihī wa ja‘ala lakumus-sam‘a wal-abṣāra wal-af'idah(ta), qalīlam mā tasykurūn(a).", "translation": "Kemudian, Dia menyempurnakannya dan meniupkan roh (ciptaan)-Nya ke dalam (tubuh)-nya. Dia menjadikan pendengaran, penglihatan, dan hati nurani untukmu. Sedikit sekali kamu bersyukur."},
+  {"no": 10, "arabic": "وَقَالُوْٓا ءَاِذَا ضَلَلْنَا فِى الْاَرْضِ ءَاِنَّا لَفِيْ خَلْقٍ جَدِيْدٍ ەۗ بَلْ هُمْ بِلِقَاۤءِ رَبِّهِمْ كٰفِرُوْنَ ", "latin": "Wa qālū a'iżā ḍalalnā fil-arḍi a'innā lafī khalqin jadīd(in), bal hum biliqā'i rabbihim kāfirūn(a).", "translation": "Mereka berkata, “Apakah apabila kami telah lenyap (hancur) di dalam tanah, kami akan (kembali) dalam ciptaan yang baru?” Bahkan (bukan hanya itu), mereka pun mengingkari pertemuan dengan Tuhannya."},
+  {"no": 11, "arabic": "۞ قُلْ يَتَوَفّٰىكُمْ مَّلَكُ الْمَوْتِ الَّذِيْ وُكِّلَ بِكُمْ ثُمَّ اِلٰى رَبِّكُمْ تُرْجَعُوْنَ ࣖ ", "latin": "Qul yatawaffākum malakul-mautil-lażī wukkila bikum ṡumma ilā rabbikum turja‘ūn(a).", "translation": "Katakanlah, “Malaikat maut yang diserahi (tugas) untuk (mencabut nyawa)-mu akan mematikanmu, kemudian kepada Tuhanmulah kamu akan dikembalikan.”"},
+  {"no": 12, "arabic": "وَلَوْ تَرٰىٓ اِذِ الْمُجْرِمُوْنَ نَاكِسُوْا رُءُوْسِهِمْ عِنْدَ رَبِّهِمْۗ رَبَّنَآ اَبْصَرْنَا وَسَمِعْنَا فَارْجِعْنَا نَعْمَلْ صَالِحًا اِنَّا مُوْقِنُوْنَ ", "latin": "Wa lau tarā iżil-mujrimūna nākisū ru'ūsihim ‘inda rabbihim, rabbanā abṣarnā wa sami‘nā farji‘nā na‘mal ṣāliḥan innā mūqinūn(a).", "translation": "Sekiranya kamu melihat orang-orang yang berdosa itu menundukkan kepalanya di hadapan Tuhannya, (kamu akan melihat sesuatu yang sangat luar biasa dan mereka berkata,) “Ya Tuhan kami, kami telah melihat (hari Kiamat yang kami ingkari) dan mendengar (dari-Mu kebenaran ucapan rasul-rasul-Mu). Maka, kembalikanlah kami (ke dunia), niscaya kami akan beramal saleh. Sesungguhnya kami (sekarang) adalah orang-orang yang yakin (akan adanya hari Kiamat).”"},
+  {"no": 13, "arabic": "وَلَوْ شِئْنَا لَاٰتَيْنَا كُلَّ نَفْسٍ هُدٰىهَا وَلٰكِنْ حَقَّ الْقَوْلُ مِنِّيْ لَاَمْلَـَٔنَّ جَهَنَّمَ مِنَ الْجِنَّةِ وَالنَّاسِ اَجْمَعِيْنَ ", "latin": "Wa lau syi'nā la'ātainā kulla nafsin hudāhā wa lākin ḥaqqal-qaulu minnī la'amla'anna  jahannama minal-jinnati wan-nāsi ajma‘īn(a).", "translation": "Seandainya Kami menghendaki, niscaya Kami menganugerahkan kepada setiap jiwa petunjuk (bagi)-nya, tetapi telah berlaku ketetapan dari-Ku (bahwa) sungguh Aku pasti akan memenuhi (neraka) Jahanam dengan jin dan manusia bersama-sama."},
+  {"no": 14, "arabic": "فَذُوْقُوْا بِمَا نَسِيْتُمْ لِقَاۤءَ يَوْمِكُمْ هٰذَاۚ اِنَّا نَسِيْنٰكُمْ وَذُوْقُوْا عَذَابَ الْخُلْدِ بِمَا كُنْتُمْ تَعْمَلُوْنَ", "latin": "Fa żūqū bimā nasītum liqā'a yaumikum hāżā, innā nasīnākum wa żūqū ‘ażābal-khuldi bimā kuntum ta‘malūn(a).", "translation": "Rasakanlah olehmu (azab ini) karena kamu melalaikan pertemuan dengan harimu ini (hari Kiamat). Sesungguhnya Kami pun melalaikanmu. Rasakanlah azab yang kekal karena apa yang selalu kamu kerjakan!”"},
+  {"no": 15, "arabic": "اِنَّمَا يُؤْمِنُ بِاٰيٰتِنَا الَّذِيْنَ اِذَا ذُكِّرُوْا بِهَا خَرُّوْا سُجَّدًا وَّسَبَّحُوْا بِحَمْدِ رَبِّهِمْ وَهُمْ لَا يَسْتَكْبِرُوْنَ ۩ ", "latin": "Innamā yu'minu bi'āyātinal-lażīna iżā żukkirū bihā kharrū sujjadaw wa sabbaḥū biḥamdi rabbihim wa hum lā yastakbirūn(a).", "translation": "Sesungguhnya orang-orang yang beriman dengan ayat-ayat Kami, hanyalah orang-orang yang apabila diperingatkan dengannya (ayat-ayat Kami), mereka menyungkur (dalam keadaan) sujud dan bertasbih serta memuji Tuhannya dan mereka pun tidak menyombongkan diri."},
+  {"no": 16, "arabic": "تَتَجَافٰى جُنُوْبُهُمْ عَنِ الْمَضَاجِعِ يَدْعُوْنَ رَبَّهُمْ خَوْفًا وَّطَمَعًاۖ وَّمِمَّا رَزَقْنٰهُمْ يُنْفِقُوْنَ", "latin": "Tatajāfā junūbuhum ‘anil-maḍāji‘i yad‘ūna rabbahum khaufaw wa ṭama‘ā(n), wa mimmā razaqnāhum yunfiqūn(a). ", "translation": "Lambung (tubuh) mereka jauh dari tempat tidur (untuk salat malam) seraya berdoa kepada Tuhannya dengan rasa takut (akan siksa-Nya) dan penuh harap (akan rahmat-Nya) dan mereka menginfakkan sebagian dari rezeki yang Kami anugerahkan kepada mereka."},
+  {"no": 17, "arabic": "فَلَا تَعْلَمُ نَفْسٌ مَّآ اُخْفِيَ لَهُمْ مِّنْ قُرَّةِ اَعْيُنٍۚ جَزَاۤءًۢ بِمَا كَانُوْا يَعْمَلُوْنَ", "latin": "Falā ta‘lamu nafsum mā ukhfiya lahum min qurrati a‘yun(in), jazā'am bimā kānū ya‘malūn(a).", "translation": "Tidak seorang pun mengetahui apa yang disembunyikan untuk mereka berupa (macam-macam nikmat) yang menyenangkan hati sebagai balasan terhadap apa yang selalu mereka kerjakan."},
+  {"no": 18, "arabic": "اَفَمَنْ كَانَ مُؤْمِنًا كَمَنْ كَانَ فَاسِقًاۗ  لَا يَسْتَوٗنَ", "latin": "Afaman kāna mu'minan kaman kāna fāsiqā(n), lā yastawūn(a).", "translation": "Apakah orang mukmin sama dengan orang fasik (kafir)? (Pastilah) mereka tidak sama."},
+  {"no": 19, "arabic": "اَمَّا الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ فَلَهُمْ جَنّٰتُ الْمَأْوٰىۖ  نُزُلًا ۢبِمَا كَانُوْا يَعْمَلُوْنَ", "latin": "Ammal-lażīna āmanū wa ‘amiluṣ-ṣāliḥāti falahum jannātul-ma'wā, nuzulam bimā kānū ya‘malūn(a).", "translation": "Adapun orang-orang yang beriman dan mengerjakan amal saleh, mereka akan mendapat surga-surga (sebagai) tempat kediaman sebagai balasan atas apa yang selalu mereka kerjakan."},
+  {"no": 20, "arabic": "وَاَمَّا الَّذِيْنَ فَسَقُوْا فَمَأْوٰىهُمُ النَّارُ كُلَّمَآ اَرَادُوْٓا اَنْ يَّخْرُجُوْا مِنْهَآ اُعِيْدُوْا فِيْهَا وَقِيْلَ لَهُمْ ذُوْقُوْا عَذَابَ النَّارِ الَّذِيْ كُنْتُمْ بِهٖ تُكَذِّبُوْنَ", "latin": "Wa ammal-lażīna fasaqū fa ma'wākumun nāru kullamā arādū ay yakhrujū minhā u‘īdū fīhā wa qīla lahum żūqū ‘ażāban nāril-lażī kuntum bihī tukażżibūn(a).", "translation": "Adapun orang-orang yang fasik (kafir), tempat kediaman mereka adalah neraka. Setiap kali mereka hendak keluar darinya, mereka dikembalikan (lagi) ke dalamnya dan dikatakan kepada mereka, “Rasakanlah azab neraka yang dahulu selalu kamu dustakan.”"},
+  {"no": 21, "arabic": "وَلَنُذِيْقَنَّهُمْ مِّنَ الْعَذَابِ الْاَدْنٰى دُوْنَ الْعَذَابِ الْاَكْبَرِ لَعَلَّهُمْ يَرْجِعُوْنَ", "latin": "Wa lanużīqannahum minal-‘ażābil-adnā dūnal-‘ażābil-akbari la‘allahum yarji‘ūn(a).", "translation": "Kami pasti akan menimpakan kepada mereka sebagian azab yang dekat (di dunia) sebelum azab yang lebih besar (di akhirat) agar mereka kembali (ke jalan yang benar)."},
+  {"no": 22, "arabic": "وَمَنْ اَظْلَمُ مِمَّنْ ذُكِّرَ بِاٰيٰتِ رَبِّهٖ ثُمَّ اَعْرَضَ عَنْهَا ۗاِنَّا مِنَ الْمُجْرِمِيْنَ مُنْتَقِمُوْنَ ࣖ", "latin": "Wa man aẓlamu mimman żukkira bi'āyāti rabbihī ṡumma a‘raḍa ‘anhā, innā minal-mujrimīna muntaqimūn(a).", "translation": "Siapakah yang lebih zalim daripada orang yang telah diperingatkan dengan ayat-ayat Tuhannya, kemudian dia berpaling darinya? Sesungguhnya Kami akan memberikan balasan kepada para pendosa."},
+  {"no": 23, "arabic": "وَلَقَدْ اٰتَيْنَا مُوْسَى الْكِتٰبَ فَلَا تَكُنْ فِيْ مِرْيَةٍ مِّنْ لِّقَاۤىِٕهٖ وَجَعَلْنٰهُ هُدًى لِّبَنِيْٓ اِسْرَاۤءِيْلَۚ", "latin": "Wa laqad ātainā mūsal-kitāba falā takun fī miryatim mil liqā'ihī wa ja‘alnāhu hudal libanī isrā'īl(a).", "translation": "Sungguh, Kami benar-benar telah menganugerahkan Kitab (Taurat) kepada Musa. Maka, janganlah engkau (Nabi Muhammad) ragu-ragu menerimanya (Al-Qur’an) dan Kami menjadikan Kitab (Taurat) itu sebagai petunjuk bagi Bani Israil."},
+  {"no": 24, "arabic": "وَجَعَلْنَا مِنْهُمْ اَىِٕمَّةً يَّهْدُوْنَ بِاَمْرِنَا لَمَّا صَبَرُوْاۗ وَكَانُوْا بِاٰيٰتِنَا يُوْقِنُوْنَ", "latin": "Wa ja‘alnā minhum a'immatay yahdūna bi'amrinā lammā ṣabarū, wa kānū bi'āyātinā yūqinūn(a).", "translation": "Kami menjadikan di antara mereka itu pemimpin-pemimpin yang memberi petunjuk dengan perintah Kami selama mereka bersabar. Mereka selalu meyakini ayat-ayat Kami."},
+  {"no": 25, "arabic": "اِنَّ رَبَّكَ هُوَ يَفْصِلُ بَيْنَهُمْ يَوْمَ الْقِيٰمَةِ فِيْمَا كَانُوْا فِيْهِ يَخْتَلِفُوْنَ", "latin": "Inna rabbaka huwa yafṣilu bainahum yaumal-qiyāmati fīmā kānū fīhi yakhtalifūn(a).", "translation": "Sesungguhnya Tuhanmu, Dialah yang memutuskan di antara mereka pada hari Kiamat apa yang dahulu selalu mereka perselisihkan."},
+  {"no": 26, "arabic": "اَوَلَمْ يَهْدِ لَهُمْ كَمْ اَهْلَكْنَا مِنْ قَبْلِهِمْ مِّنَ الْقُرُوْنِ يَمْشُوْنَ فِيْ مَسٰكِنِهِمْ ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍۗ اَفَلَا يَسْمَعُوْنَ", "latin": "Awalam yahdi lahum kam ahlaknā min qablihim minal-qurūni yamsyūna fī masākinihim, inna fī żālika la'āyāt(in), afalā yasma‘ūn(a).", "translation": "Tidakkah menjadi petunjuk bagi mereka (kaum kafir Makkah), betapa banyak umat sebelum mereka yang telah Kami binasakan, sedangkan mereka sendiri berjalan di tempat-tempat kediaman mereka itu. Sesungguhnya pada yang demikian itu terdapat tanda-tanda (kekuasaan Allah). Apakah mereka tidak mendengarkan (memperhatikan)?"},
+  {"no": 27, "arabic": "اَوَلَمْ يَرَوْا اَنَّا نَسُوْقُ الْمَاۤءَ اِلَى الْاَرْضِ الْجُرُزِ فَنُخْرِجُ بِهٖ زَرْعًا تَأْكُلُ مِنْهُ اَنْعَامُهُمْ وَاَنْفُسُهُمْۗ اَفَلَا يُبْصِرُوْنَ", "latin": "Awalam yarau annā nasūqul-mā'a ilal-arḍil juruzi fanukhriju bihī zar‘an ta'kulu minhu an‘āmuhum wa anfushum, afalā yubṣirūn(a).", "translation": "Tidakkah mereka memperhatikan bahwa Kami mengarahkan (awan yang mengandung) air ke bumi yang tandus, lalu Kami menumbuhkan dengannya (air hujan) tanam-tanaman, sehingga hewan-hewan ternak mereka dan mereka sendiri dapat makan darinya. Maka, mengapa mereka tidak memperhatikan?"},
+  {"no": 28, "arabic": "وَيَقُوْلُوْنَ مَتٰى هٰذَا الْفَتْحُ اِنْ كُنْتُمْ صٰدِقِيْنَ", "latin": "Wa yaqūlūna matā hāżal-fatḥu in kuntum ṣādiqīn(a).", "translation": "Mereka bertanya, “Kapankah kemenangan itu (datang) jika engkau orang yang benar?”"},
+  {"no": 29, "arabic": "قُلْ يَوْمَ الْفَتْحِ لَا يَنْفَعُ الَّذِيْنَ كَفَرُوْٓا اِيْمَانُهُمْ وَلَا هُمْ يُنْظَرُوْنَ", "latin": "Qul yaumal-fatḥi lā yanfa‘ul-lażīna kafarū īmānuhum wa lā hum yunẓarūn(a).", "translation": "Katakanlah, “Pada hari kemenangan itu tidak berguna lagi bagi orang-orang kafir keimanan mereka dan mereka tidak diberi penangguhan.”"},
+  {"no": 30, "arabic": "فَاَعْرِضْ عَنْهُمْ وَانْتَظِرْ اِنَّهُمْ مُّنْتَظِرُوْنَ ࣖ", "latin": "Fa a‘riḍ ‘anhum wantaẓir innahum muntaẓirūn(a).", "translation": "Maka, berpalinglah dari mereka dan tunggulah! Sesungguhnya mereka (juga) menunggu."}
 ];
 
 export const AS_SAJDAH_INFO = {
