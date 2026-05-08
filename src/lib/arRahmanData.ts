@@ -1,5 +1,5 @@
 // Surah Ar-Rahman (55) — 78 ayat
-// Sumber: api.alquran.cloud
+// Sumber: equran.id (Latin & terjemahan Indonesia)
 
 export interface SurahAyat {
   no: number;
@@ -9,474 +9,84 @@ export interface SurahAyat {
 }
 
 export const AR_RAHMAN: SurahAyat[] = [
-  {
-    "no": 1,
-    "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلرَّحْمَٰنُ",
-    "latin": "Ar Rahmaan",
-    "translation": "(Tuhan) Yang Maha Pemurah,"
-  },
-  {
-    "no": 2,
-    "arabic": "عَلَّمَ ٱلْقُرْءَانَ",
-    "latin": "'Allamal Quran",
-    "translation": "Yang telah mengajarkan al Quran."
-  },
-  {
-    "no": 3,
-    "arabic": "خَلَقَ ٱلْإِنسَٰنَ",
-    "latin": "Khalaqal insaan",
-    "translation": "Dia menciptakan manusia."
-  },
-  {
-    "no": 4,
-    "arabic": "عَلَّمَهُ ٱلْبَيَانَ",
-    "latin": "'Allamalhul bayaan",
-    "translation": "Mengajarnya pandai berbicara."
-  },
-  {
-    "no": 5,
-    "arabic": "ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍۢ",
-    "latin": "Ashshamsu walqamaru bihusbaan",
-    "translation": "Matahari dan bulan (beredar) menurut perhitungan."
-  },
-  {
-    "no": 6,
-    "arabic": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ",
-    "latin": "Wannajmu washshajaru yasjudan",
-    "translation": "Dan tumbuh-tumbuhan dan pohon-pohonan kedua-duanya tunduk kepada-Nya."
-  },
-  {
-    "no": 7,
-    "arabic": "وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ",
-    "latin": "Wassamaaa'a rafa'ahaa wa wada'al Meezan",
-    "translation": "Dan Allah telah meninggikan langit dan Dia meletakkan neraca (keadilan)."
-  },
-  {
-    "no": 8,
-    "arabic": "أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ",
-    "latin": "Allaa tatghaw fil meezaan",
-    "translation": "Supaya kamu jangan melampaui batas tentang neraca itu."
-  },
-  {
-    "no": 9,
-    "arabic": "وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ",
-    "latin": "Wa aqeemul wazna bilqisti wa laa tukhsirul meezaan",
-    "translation": "Dan tegakkanlah timbangan itu dengan adil dan janganlah kamu mengurangi neraca itu."
-  },
-  {
-    "no": 10,
-    "arabic": "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ",
-    "latin": "Wal arda wada'ahaa lilanaame",
-    "translation": "Dan Allah telah meratakan bumi untuk makhluk(Nya)."
-  },
-  {
-    "no": 11,
-    "arabic": "فِيهَا فَٰكِهَةٌۭ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ",
-    "latin": "Feehaa faakihatunw wan nakhlu zaatul akmaam",
-    "translation": "Di bumi itu ada buah-buahan dan pohon kurma yang mempunyai kelopak mayang."
-  },
-  {
-    "no": 12,
-    "arabic": "وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱلرَّيْحَانُ",
-    "latin": "Walhabbu zul 'asfi war Raihaanu",
-    "translation": "Dan biji-bijian yang berkulit dan bunga-bunga yang harum baunya."
-  },
-  {
-    "no": 13,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 14,
-    "arabic": "خَلَقَ ٱلْإِنسَٰنَ مِن صَلْصَٰلٍۢ كَٱلْفَخَّارِ",
-    "latin": "Khalaqal insaana min salsaalin kalfakhkhaari",
-    "translation": "Dia menciptakan manusia dari tanah kering seperti tembikar,"
-  },
-  {
-    "no": 15,
-    "arabic": "وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍۢ مِّن نَّارٍۢ",
-    "latin": "Wa khalaqal jaaan mim maarijim min naar",
-    "translation": "dan Dia menciptakan jin dari nyala api."
-  },
-  {
-    "no": 16,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 17,
-    "arabic": "رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ",
-    "latin": "Rabbul mashriqayni wa Rabbul maghribayni",
-    "translation": "Tuhan yang memelihara kedua tempat terbit matahari dan Tuhan yang memelihara kedua tempat terbenamnya"
-  },
-  {
-    "no": 18,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 19,
-    "arabic": "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
-    "latin": "Marajal bahrayni yalta qiyaani",
-    "translation": "Dia membiarkan dua lautan mengalir yang keduanya kemudian bertemu,"
-  },
-  {
-    "no": 20,
-    "arabic": "بَيْنَهُمَا بَرْزَخٌۭ لَّا يَبْغِيَانِ",
-    "latin": "Bainahumaa barzakhul laa yabghiyaan",
-    "translation": "antara keduanya ada batas yang tidak dilampaui masing-masing."
-  },
-  {
-    "no": 21,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 22,
-    "arabic": "يَخْرُجُ مِنْهُمَا ٱللُّؤْلُؤُ وَٱلْمَرْجَانُ",
-    "latin": "Yakhruju minhumal lu 'lu u wal marjaanu",
-    "translation": "Dari keduanya keluar mutiara dan marjan."
-  },
-  {
-    "no": 23,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 24,
-    "arabic": "وَلَهُ ٱلْجَوَارِ ٱلْمُنشَـَٔاتُ فِى ٱلْبَحْرِ كَٱلْأَعْلَٰمِ",
-    "latin": "Wa lahul jawaaril mun sha'aatu fil bahri kal a'laam",
-    "translation": "Dan kepunyaan-Nya lah bahtera-bahtera yang tinggi layarnya di lautan laksana gunung-gunung."
-  },
-  {
-    "no": 25,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 26,
-    "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۢ",
-    "latin": "Kullu man 'alaihaa faan",
-    "translation": "Semua yang ada di bumi itu akan binasa."
-  },
-  {
-    "no": 27,
-    "arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
-    "latin": "Wa yabqaa wajhu rabbika zul jalaali wal ikraam",
-    "translation": "Dan tetap kekal Dzat Tuhanmu yang mempunyai kebesaran dan kemuliaan."
-  },
-  {
-    "no": 28,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 29,
-    "arabic": "يَسْـَٔلُهُۥ مَن فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ كُلَّ يَوْمٍ هُوَ فِى شَأْنٍۢ",
-    "latin": "Yas'aluhoo man fissamaawaati walard; kulla ywmin huwa fee shaan",
-    "translation": "Semua yang ada di langit dan bumi selalu meminta kepada-Nya. Setiap waktu Dia dalam kesibukan."
-  },
-  {
-    "no": 30,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Rabb-mu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 31,
-    "arabic": "سَنَفْرُغُ لَكُمْ أَيُّهَ ٱلثَّقَلَانِ",
-    "latin": "Sanafrughu lakum ayyuhas saqalaan",
-    "translation": "Kami akan memperhatikan sepenuhnya kepadamu hai manusia dan jin."
-  },
-  {
-    "no": 32,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 33,
-    "arabic": "يَٰمَعْشَرَ ٱلْجِنِّ وَٱلْإِنسِ إِنِ ٱسْتَطَعْتُمْ أَن تَنفُذُوا۟ مِنْ أَقْطَارِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ فَٱنفُذُوا۟ ۚ لَا تَنفُذُونَ إِلَّا بِسُلْطَٰنٍۢ",
-    "latin": "Yaa ma'sharal jinni wal insi inis tata'tum an tanfuzoo min aqtaaris samaawaati wal ardi fanfuzoo; laa tanfuzoona illaa bisultaan",
-    "translation": "Hai jama'ah jin dan manusia, jika kamu sanggup menembus (melintasi) penjuru langit dan bumi, maka lintasilah, kamu tidak dapat menembusnya kecuali dengan kekuatan."
-  },
-  {
-    "no": 34,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 35,
-    "arabic": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌۭ مِّن نَّارٍۢ وَنُحَاسٌۭ فَلَا تَنتَصِرَانِ",
-    "latin": "Yursalu 'alaikumaa shuwaazum min naarifiw-wa nuhaasun falaa tantasiraan",
-    "translation": "Kepada kamu, (jin dan manusia) dilepaskan nyala api dan cairan tembaga maka kamu tidak dapat menyelamatkan diri (dari padanya)."
-  },
-  {
-    "no": 36,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 37,
-    "arabic": "فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتْ وَرْدَةًۭ كَٱلدِّهَانِ",
-    "latin": "Fa-izan shaqqatis samaaa'u fakaanat wardatan kaddihaan",
-    "translation": "Maka apabila langit telah terbelah dan menjadi merah mawar seperti (kilapan) minyak."
-  },
-  {
-    "no": 38,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 39,
-    "arabic": "فَيَوْمَئِذٍۢ لَّا يُسْـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٌۭ وَلَا جَآنٌّۭ",
-    "latin": "Fa-yawma'izil laa yus'alu 'an zambiheee insunw wa laa jaann",
-    "translation": "Pada waktu itu manusia dan jin tidak ditanya tentang dosanya."
-  },
-  {
-    "no": 40,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 41,
-    "arabic": "يُعْرَفُ ٱلْمُجْرِمُونَ بِسِيمَٰهُمْ فَيُؤْخَذُ بِٱلنَّوَٰصِى وَٱلْأَقْدَامِ",
-    "latin": "Yu'raful mujrimoona biseemaahum fa'yu'khazu binna waasi wal aqdaam",
-    "translation": "Orang-orang yang berdosa dikenal dengan tanda-tandannya, lalu dipegang ubun-ubun dan kaki mereka."
-  },
-  {
-    "no": 42,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 43,
-    "arabic": "هَٰذِهِۦ جَهَنَّمُ ٱلَّتِى يُكَذِّبُ بِهَا ٱلْمُجْرِمُونَ",
-    "latin": "Haazihee jahannamul latee yukazzibu bihal mujrimoon",
-    "translation": "Inilah neraka Jahannam yang didustakan oleh orang-orang berdosa."
-  },
-  {
-    "no": 44,
-    "arabic": "يَطُوفُونَ بَيْنَهَا وَبَيْنَ حَمِيمٍ ءَانٍۢ",
-    "latin": "Yatoofoona bainahaa wa baina hameemim aan",
-    "translation": "Mereka berkeliling di antaranya dan di antara air mendidih yang memuncak panasnya."
-  },
-  {
-    "no": 45,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 46,
-    "arabic": "وَلِمَنْ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ",
-    "latin": "Wa liman khaafa maqaama rabbihee jannataan",
-    "translation": "Dan bagi orang yang takut akan saat menghadap Tuhannya ada dua surga."
-  },
-  {
-    "no": 47,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?,"
-  },
-  {
-    "no": 48,
-    "arabic": "ذَوَاتَآ أَفْنَانٍۢ",
-    "latin": "Zawaataaa afnaan",
-    "translation": "kedua surga itu mempunyai pohon-pohonan dan buah-buahan."
-  },
-  {
-    "no": 49,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 50,
-    "arabic": "فِيهِمَا عَيْنَانِ تَجْرِيَانِ",
-    "latin": "Feehimaa 'aynaani tajriyaan",
-    "translation": "Di dalam kedua surga itu ada dua buah mata air yang mengalir"
-  },
-  {
-    "no": 51,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 52,
-    "arabic": "فِيهِمَا مِن كُلِّ فَٰكِهَةٍۢ زَوْجَانِ",
-    "latin": "Feehimaa min kulli faakihatin zawjaan",
-    "translation": "Di dalam kedua surga itu terdapat segala macam buah-buahan yang berpasangan."
-  },
-  {
-    "no": 53,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 54,
-    "arabic": "مُتَّكِـِٔينَ عَلَىٰ فُرُشٍۭ بَطَآئِنُهَا مِنْ إِسْتَبْرَقٍۢ ۚ وَجَنَى ٱلْجَنَّتَيْنِ دَانٍۢ",
-    "latin": "Muttaki'eena 'alaa furushim bataaa'inuhaa min istabraq; wajanal jannataini daan",
-    "translation": "Mereka bertelekan di atas permadani yang sebelah dalamnya dari sutera. Dan buah-buahan di kedua surga itu dapat (dipetik) dari dekat."
-  },
-  {
-    "no": 55,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 56,
-    "arabic": "فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرْفِ لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ",
-    "latin": "Feehinna qaasiratut tarfi lam yatmishunna insun qablahum wa laa jaaann",
-    "translation": "Di dalam surga itu ada bidadari-bidadari yang sopan menundukkan pandangannya, tidak pernah disentuh oleh manusia sebelum mereka (penghuni-penghuni surga yang menjadi suami mereka), dan tidak pula oleh jin."
-  },
-  {
-    "no": 57,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 58,
-    "arabic": "كَأَنَّهُنَّ ٱلْيَاقُوتُ وَٱلْمَرْجَانُ",
-    "latin": "ka annahunnal yaaqootu wal marjaan",
-    "translation": "Seakan-akan bidadari itu permata yakut dan marjan."
-  },
-  {
-    "no": 59,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 60,
-    "arabic": "هَلْ جَزَآءُ ٱلْإِحْسَٰنِ إِلَّا ٱلْإِحْسَٰنُ",
-    "latin": "Hal jazaaa'ul ihsaani illal ihsaan",
-    "translation": "Tidak ada balasan kebaikan kecuali kebaikan (pula)."
-  },
-  {
-    "no": 61,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 62,
-    "arabic": "وَمِن دُونِهِمَا جَنَّتَانِ",
-    "latin": "Wa min doonihimaa jannataan",
-    "translation": "Dan selain dari dua surga itu ada dua surga lagi"
-  },
-  {
-    "no": 63,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 64,
-    "arabic": "مُدْهَآمَّتَانِ",
-    "latin": "Mudhaaammataan",
-    "translation": "Kedua surga itu (kelihatan) hijau tua warnanya."
-  },
-  {
-    "no": 65,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 66,
-    "arabic": "فِيهِمَا عَيْنَانِ نَضَّاخَتَانِ",
-    "latin": "Feehimaa 'aynaani nad daakhataan",
-    "translation": "Di dalam kedua surga itu ada dua buah mata air yang memancar."
-  },
-  {
-    "no": 67,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 68,
-    "arabic": "فِيهِمَا فَٰكِهَةٌۭ وَنَخْلٌۭ وَرُمَّانٌۭ",
-    "latin": "Feehimaa faakihatunw wa nakhlunw wa rummaan",
-    "translation": "Di dalam keduanya (ada macam-macam) buah-buahan dan kurma serta delima."
-  },
-  {
-    "no": 69,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 70,
-    "arabic": "فِيهِنَّ خَيْرَٰتٌ حِسَانٌۭ",
-    "latin": "Feehinna khairaatun hisaan",
-    "translation": "Di dalam surga itu ada bidadari-bidadari yang baik-baik lagi cantik-cantik."
-  },
-  {
-    "no": 71,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 72,
-    "arabic": "حُورٌۭ مَّقْصُورَٰتٌۭ فِى ٱلْخِيَامِ",
-    "latin": "Hoorum maqsooraatun fil khiyaam",
-    "translation": "(Bidadari-bidadari) yang jelita, putih bersih, dipingit dalam rumah."
-  },
-  {
-    "no": 73,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 74,
-    "arabic": "لَمْ يَطْمِثْهُنَّ إِنسٌۭ قَبْلَهُمْ وَلَا جَآنٌّۭ",
-    "latin": "Lam yatmis hunna insun qablahum wa laa jaaann",
-    "translation": "Mereka tidak pernah disentuh oleh manusia sebelum mereka (penghuni-penghuni surga yang menjadi suami mereka), dan tidak pula oleh jin."
-  },
-  {
-    "no": 75,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 76,
-    "arabic": "مُتَّكِـِٔينَ عَلَىٰ رَفْرَفٍ خُضْرٍۢ وَعَبْقَرِىٍّ حِسَانٍۢ",
-    "latin": "Muttaki'eena 'alaa rafratin khudrinw wa 'abqariyyin hisaan",
-    "translation": "Mereka bertelekan pada bantal-bantal yang hijau dan permadani-permadani yang indah."
-  },
-  {
-    "no": 77,
-    "arabic": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
-    "latin": "Fabi ayyi aalaaa'i Rabbikumaa tukazzibaan.",
-    "translation": "Maka nikmat Tuhan kamu yang manakah yang kamu dustakan?"
-  },
-  {
-    "no": 78,
-    "arabic": "تَبَٰرَكَ ٱسْمُ رَبِّكَ ذِى ٱلْجَلَٰلِ وَٱلْإِكْرَامِ",
-    "latin": "Tabaarakasmu Rabbika Zil-Jalaali wal-Ikraam",
-    "translation": "Maha Agung nama Tuhanmu Yang Mempunyai Kebesaran dan Karunia."
-  }
+  {"no": 1, "arabic": "اَلرَّحْمٰنُۙ  ", "latin": "Ar-raḥmān(u).", "translation": "(Allah) Yang Maha Pengasih,"},
+  {"no": 2, "arabic": "عَلَّمَ الْقُرْاٰنَۗ ", "latin": "‘Allamal-qur'ān(a).", "translation": "telah mengajarkan Al-Qur’an."},
+  {"no": 3, "arabic": "خَلَقَ الْاِنْسَانَۙ ", "latin": "Khalaqal-insān(a).", "translation": "Dia menciptakan manusia."},
+  {"no": 4, "arabic": "عَلَّمَهُ الْبَيَانَ ", "latin": "‘Allamahul-bayān(a).", "translation": "Dia mengajarinya pandai menjelaskan."},
+  {"no": 5, "arabic": "اَلشَّمْسُ وَالْقَمَرُ بِحُسْبَانٍۙ ", "latin": "Asy-syamsu wal-qamaru biḥusbān(in).", "translation": "Matahari dan bulan (beredar) sesuai dengan perhitungan."},
+  {"no": 6, "arabic": "وَّالنَّجْمُ وَالشَّجَرُ يَسْجُدَانِ ", "latin": "Wan-najmu wasy-syajaru yasjudān(i).", "translation": "Tetumbuhan dan pepohonan tunduk (kepada-Nya)."},
+  {"no": 7, "arabic": "وَالسَّمَاۤءَ رَفَعَهَا وَوَضَعَ الْمِيْزَانَۙ  ", "latin": "Was-samā'a rafa‘ahā wa waḍa‘al-mīzān(a).", "translation": "Langit telah Dia tinggikan dan Dia telah menciptakan timbangan (keadilan dan keseimbangan)"},
+  {"no": 8, "arabic": "اَلَّا تَطْغَوْا فِى الْمِيْزَانِ ", "latin": "Allā taṭgau fil-mīzān(i).", "translation": "agar kamu tidak melampaui batas dalam timbangan itu."},
+  {"no": 9, "arabic": "وَاَقِيْمُوا الْوَزْنَ بِالْقِسْطِ وَلَا تُخْسِرُوا الْمِيْزَانَ ", "latin": "Wa aqīmul-wazna  bil-qisṭi wa lā tukhsirul-mīzān(a).", "translation": "Tegakkanlah timbangan itu dengan adil dan janganlah kamu mengurangi timbangan itu."},
+  {"no": 10, "arabic": "وَالْاَرْضَ وَضَعَهَا لِلْاَنَامِۙ  ", "latin": "Wal-arḍa waḍa‘ahā lil-anām(i). ", "translation": "Bumi telah Dia bentangkan untuk makhluk(-Nya)."},
+  {"no": 11, "arabic": "فِيْهَا فَاكِهَةٌ وَّالنَّخْلُ ذَاتُ الْاَكْمَامِۖ  ", "latin": "Fīhā fākihatuw wan-nakhlu żātul-akmām(i).", "translation": "Padanya terdapat buah-buahan dan pohon kurma yang mempunyai kelopak mayang,"},
+  {"no": 12, "arabic": "وَالْحَبُّ ذُو الْعَصْفِ وَالرَّيْحَانُۚ  ", "latin": "Wal-ḥabbu żul-‘aṣfi war-raiḥān(u).", "translation": "biji-bijian yang berkulit, dan bunga-bunga yang harum baunya."},
+  {"no": 13, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 14, "arabic": "خَلَقَ الْاِنْسَانَ مِنْ صَلْصَالٍ كَالْفَخَّارِ ", "latin": "Khalaqal-insāna min ṣalṣālin kal-fakhkhār(i).", "translation": "Dia telah menciptakan manusia dari tanah kering seperti tembikar."},
+  {"no": 15, "arabic": "وَخَلَقَ الْجَاۤنَّ مِنْ مَّارِجٍ مِّنْ نَّارٍۚ  ", "latin": "Wa khalaqal-jānna mim mārijim min nār(in).", "translation": "Dia juga telah menciptakan jin dari nyala api tanpa asap."},
+  {"no": 16, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 17, "arabic": "رَبُّ الْمَشْرِقَيْنِ وَرَبُّ الْمَغْرِبَيْنِۚ ", "latin": "Rabbul-masyriqaini wa rabbul-magribain(i).", "translation": "(Dialah) Tuhan kedua tempat terbit (matahari pada musim panas dan musim dingin) dan Tuhan kedua tempat terbenam (matahari pada kedua musim itu)."},
+  {"no": 18, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": ".Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 19, "arabic": "مَرَجَ الْبَحْرَيْنِ يَلْتَقِيٰنِۙ", "latin": "Marajal-baḥraini yaltaqiyān(i).", "translation": "Dia membiarkan dua laut (tawar dan asin) bertemu."},
+  {"no": 20, "arabic": "بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيٰنِۚ", "latin": "Bainahumā barzakhul lā yabgiyān(i).", "translation": "Di antara keduanya ada pembatas yang tidak dilampaui oleh masing-masing."},
+  {"no": 21, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 22, "arabic": "يَخْرُجُ مِنْهُمَا اللُّؤْلُؤُ وَالْمَرْجَانُۚ", "latin": "Yakhruju minhumal-lu'lu'u wal-marjān(u).", "translation": "Dari keduanya keluar mutiara dan marjan."},
+  {"no": 23, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 24, "arabic": "وَلَهُ الْجَوَارِ الْمُنْشَاٰتُ فِى الْبَحْرِ كَالْاَعْلَامِۚ  ", "latin": "Wa lahul-jawāril-munsya'ātu fil-baḥri kal-a‘lām(i).", "translation": "Milik-Nyalah (bahtera) buatan manusia yang berlayar di laut laksana gunung-gunung."},
+  {"no": 25, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ࣖ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 26, "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۖ  ", "latin": "Kullu man ‘alaihā fān(in).", "translation": "Semua yang ada di atasnya (bumi) itu akan binasa."},
+  {"no": 27, "arabic": "وَّيَبْقٰى وَجْهُ رَبِّكَ ذُو الْجَلٰلِ وَالْاِكْرَامِۚ  ", "latin": "Wa yabqā wajhu rabbika żul-jalāli wal-ikrām(i).", "translation": "(Akan tetapi,) wajah (zat) Tuhanmu yang memiliki kebesaran dan kemuliaan tetap kekal."},
+  {"no": 28, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 29, "arabic": "يَسْـَٔلُهٗ مَنْ فِى السَّمٰوٰتِ وَالْاَرْضِۗ  كُلَّ يَوْمٍ هُوَ فِيْ شَأْنٍۚ", "latin": "Yas'aluhū man fis-samāwāti wal-arḍ(i), kulla yaumin huwa fī sya'n(in).", "translation": "Siapa yang ada di langit dan bumi selalu meminta kepada-Nya. Setiap hari Dia menangani urusan."},
+  {"no": 30, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 31, "arabic": "سَنَفْرُغُ لَكُمْ اَيُّهَ الثَّقَلٰنِۚ  ", "latin": "Sanafrugu lakum ayyuhaṡ-ṡaqalān(i).", "translation": "Kami akan mencurahkan perhatian kepadamu, wahai manusia dan jin."},
+  {"no": 32, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 33, "arabic": "يٰمَعْشَرَ الْجِنِّ وَالْاِنْسِ اِنِ اسْتَطَعْتُمْ اَنْ تَنْفُذُوْا مِنْ اَقْطَارِ السَّمٰوٰتِ وَالْاَرْضِ فَانْفُذُوْاۗ  لَا تَنْفُذُوْنَ اِلَّا بِسُلْطٰنٍۚ ", "latin": "Yā ma‘syaral-jinni wal-insi inistaṭa‘tum an tanfużū min aqṭāris-samāwāti wal-arḍi fanfużū, lā tanfużūna illā bisulṭān(in).", "translation": "Wahai segenap jin dan manusia, jika kamu sanggup menembus (melintasi) penjuru langit dan bumi, tembuslah. Kamu tidak akan mampu menembusnya, kecuali dengan kekuatan (dari Allah)."},
+  {"no": 34, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 35, "arabic": "يُرْسَلُ عَلَيْكُمَا شُوَاظٌ مِّنْ نَّارٍۙ وَّنُحَاسٌ فَلَا تَنْتَصِرَانِۚ ", "latin": "Yursalu ‘alaikumā syuwāẓum min nār(in), wa nuḥāsun falā tantaṣirān(i).", "translation": "Kepadamu, (wahai jin dan manusia,) disemburkan nyala api dan (ditumpahkan) cairan tembaga panas sehingga kamu tidak dapat menyelamatkan diri."},
+  {"no": 36, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 37, "arabic": "فَاِذَا انْشَقَّتِ السَّمَاۤءُ فَكَانَتْ وَرْدَةً كَالدِّهَانِۚ ", "latin": "Fa iżansyaqqatis-samā'u fa kānat wardatan kad-dihān(i).", "translation": "Maka, apabila langit terbelah, lalu (warnanya) menjadi merah mawar seperti (kilauan) minyak, (terjadilah kengerian yang hebat)."},
+  {"no": 38, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 39, "arabic": "فَيَوْمَئِذٍ لَّا يُسْـَٔلُ عَنْ ذَنْۢبِهٖٓ اِنْسٌ وَّلَا جَاۤنٌّۚ  ", "latin": "Fa yauma'iżil lā yus'alu ‘an żambihī insuw wa lā jānn(un).", "translation": "Maka, pada hari itu manusia dan jin tidak ditanya tentang dosanya"},
+  {"no": 40, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ  ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 41, "arabic": "يُعْرَفُ الْمُجْرِمُوْنَ بِسِيْمٰهُمْ فَيُؤْخَذُ بِالنَّوَاصِيْ وَالْاَقْدَامِۚ  ", "latin": "Yu‘raful-mujrimūna bisīmāhum fa yu'khażu bin-nawāṣī wal-aqdām(i).", "translation": "Para pendosa dikenali dengan tanda-tandanya, lalu direnggut ubun-ubun dan kakinya."},
+  {"no": 42, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 43, "arabic": "هٰذِهٖ جَهَنَّمُ الَّتِيْ يُكَذِّبُ بِهَا الْمُجْرِمُوْنَۘ ", "latin": "Hāżihī jahannamul-latī yukażżibu bihal-mujrimūn(a).", "translation": "Inilah (neraka) Jahanam yang didustakan oleh para pendosa."},
+  {"no": 44, "arabic": "يَطُوْفُوْنَ بَيْنَهَا وَبَيْنَ حَمِيْمٍ اٰنٍۚ  ", "latin": "Yaṭūfūna bainahā wa baina ḥamīmin ān(in).", "translation": "Mereka bolak-balik di antaranya (api neraka) dan air mendidih yang sangat panas."},
+  {"no": 45, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ࣖ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 46, "arabic": "وَلِمَنْ خَافَ مَقَامَ رَبِّهٖ جَنَّتٰنِۚ", "latin": "Wa liman khāfa maqāma rabbihī jannatān(i).", "translation": "Bagi siapa yang takut pada keagungan Tuhannya disediakan dua surga."},
+  {"no": 47, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۙ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 48, "arabic": "ذَوَاتَآ اَفْنَانٍۚ ", "latin": "Żawātā afnān(in).", "translation": "Kedua surga itu mempunyai (pepohonan) yang bercabang-cabang."},
+  {"no": 49, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fabi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 50, "arabic": "فِيْهِمَا عَيْنٰنِ تَجْرِيٰنِۚ ", "latin": "Fīhimā ‘aināni tajriyān(i).", "translation": "Di dalam kedua (surga) itu terdapat dua mata air yang memancar."},
+  {"no": 51, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 52, "arabic": "فِيْهِمَا مِنْ كُلِّ فَاكِهَةٍ زَوْجٰنِۚ ", "latin": "Fīhimā min kulli fākihatin zaujān(i).", "translation": "Di dalam kedua (surga) itu terdapat aneka buah-buahan yang berpasang-pasangan."},
+  {"no": 53, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 54, "arabic": "مُتَّكِـِٕيْنَ عَلٰى فُرُشٍۢ بَطَاۤىِٕنُهَا مِنْ اِسْتَبْرَقٍۗ وَجَنَا الْجَنَّتَيْنِ دَانٍۚ ", "latin": "Muttaki'īna ‘alā furusyim baṭā'inuhā min istabraq(in), wa janal-jannataini  dān(in).", "translation": "Mereka berbaring di atas permadani yang bagian dalamnya (terbuat) dari sutera tebal. Buah-buahan di kedua surga itu (dapat) dipetik dari dekat."},
+  {"no": 55, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 56, "arabic": "فِيْهِنَّ قٰصِرٰتُ الطَّرْفِۙ لَمْ يَطْمِثْهُنَّ اِنْسٌ قَبْلَهُمْ وَلَا جَاۤنٌّۚ  ", "latin": "Fīhinna qāṣirātuṭ-ṭarf(i), lam yaṭmiṡhunna insun qablahum wa lā jānn(un).", "translation": "Di dalamnya ada (bidadari) yang membatasi pandangan (hanya untuk pasangannya) yang tidak pernah disentuh oleh manusia sebelum mereka dan tidak (pula) oleh jin."},
+  {"no": 57, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 58, "arabic": "كَاَنَّهُنَّ الْيَاقُوْتُ وَالْمَرْجَانُۚ ", "latin": "Ka'annahunnal-yāqūtu wal-marjān(u).", "translation": "Seakan-akan mereka itu permata yakut dan marjan."},
+  {"no": 59, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 60, "arabic": "هَلْ جَزَاۤءُ الْاِحْسَانِ اِلَّا الْاِحْسَانُۚ ", "latin": "Hal jazā'ul-iḥsāni illal-iḥsān(u).", "translation": "Adakah balasan kebaikan selain kebaikan (pula)?"},
+  {"no": 61, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 62, "arabic": "وَمِنْ دُوْنِهِمَا جَنَّتٰنِۚ ", "latin": "Wa min dūnihimā jannatān(i).", "translation": "Selain dari kedua (surga) itu ada dua surga (lagi)."},
+  {"no": 63, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۙ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 64, "arabic": "مُدْهَاۤمَّتٰنِۚ  ", "latin": "Mudhāmmatān(i).", "translation": "Kedua surga itu (terlihat warnanya) hijau tua."},
+  {"no": 65, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 66, "arabic": "فِيْهِمَا عَيْنٰنِ نَضَّاخَتٰنِۚ ", "latin": "Fīhimā ‘aināni naḍḍākhatān(i).", "translation": "Di dalam keduanya ada dua mata air yang memancar tanpa henti."},
+  {"no": 67, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ  ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 68, "arabic": "فِيْهِمَا فَاكِهَةٌ وَّنَخْلٌ وَّرُمَّانٌۚ  ", "latin": "Fīhimā fākihatuw wa nakhluw wa rummān(un).", "translation": "Di dalam keduanya ada buah-buahan (antara lain) kurma dan delima."},
+  {"no": 69, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 70, "arabic": "فِيْهِنَّ خَيْرٰتٌ حِسَانٌۚ  ", "latin": "Fīhinna khairātun ḥisān(un).", "translation": "Di dalamnya ada (bidadari) yang mulia (akhlaknya) lagi jelita."},
+  {"no": 71, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 72, "arabic": "حُوْرٌ مَّقْصُوْرٰتٌ فِى الْخِيَامِۚ  ", "latin": "Ḥūrum maqṣūrātun fil-khiyām(i).", "translation": "Bidadari-bidadari yang dipingit dalam kemah-kemah."},
+  {"no": 73, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ  ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 74, "arabic": "لَمْ يَطْمِثْهُنَّ اِنْسٌ قَبْلَهُمْ وَلَا جَاۤنٌّۚ  ", "latin": "Lam yaṭmiṡhunna insun qablahum wa lā jānn(un).", "translation": "Mereka tidak pernah disentuh oleh manusia sebelum mereka dan tidak (pula) oleh jin."},
+  {"no": 75, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ  ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 76, "arabic": "مُتَّكِـِٕيْنَ عَلٰى رَفْرَفٍ خُضْرٍ وَّعَبْقَرِيٍّ حِسَانٍۚ  ", "latin": "Muttaki'īna ‘alā rafrafin khuḍriw wa ‘abqariyyin ḥisān(in).", "translation": "Mereka bertelekan pada bantal-bantal yang hijau dan permadani-permadani yang indah."},
+  {"no": 77, "arabic": "فَبِاَيِّ اٰلَاۤءِ رَبِّكُمَا تُكَذِّبٰنِۚ ", "latin": "Fa bi'ayyi ālā'i rabbikumā tukażżibān(i).", "translation": "Maka, nikmat Tuhanmu manakah yang kamu dustakan (wahai jin dan manusia)?"},
+  {"no": 78, "arabic": "تَبٰرَكَ اسْمُ رَبِّكَ ذِى الْجَلٰلِ وَالْاِكْرَامِ ࣖ ", "latin": "Tabārakasmu rabbika żil-jalāli wal-ikrām(i).", "translation": "Maha Berkah nama Tuhanmu Pemilik keagungan dan kemuliaan."}
 ];
 
 export const AR_RAHMAN_INFO = {
