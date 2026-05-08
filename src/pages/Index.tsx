@@ -35,6 +35,12 @@ import { AL_KAHFI, AL_KAHFI_INFO } from "@/lib/alKahfiData";
 import { AR_RAHMAN, AR_RAHMAN_INFO } from "@/lib/arRahmanData";
 import { AS_SAJDAH, AS_SAJDAH_INFO } from "@/lib/asSajdahData";
 import { useAlMulkReminder } from "@/hooks/useAlMulkReminder";
+import { useAyatHarianReminder } from "@/hooks/useAyatHarianReminder";
+import { AyatHarianCard } from "@/components/AyatHarianCard";
+import { AsmaulHusnaDialog } from "@/components/AsmaulHusnaDialog";
+import { TahlilDialog } from "@/components/TahlilDialog";
+import { DoaTematikDialog } from "@/components/DoaTematikDialog";
+import { ArbainDialog } from "@/components/ArbainDialog";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
@@ -43,6 +49,7 @@ const Index = () => {
   const { checked, toggle } = useChecklist();
   const { enabled: dzikirOn, toggle: toggleDzikir } = useDzikirReminder();
   const { enabled: mulkOn, toggle: toggleMulk } = useAlMulkReminder();
+  const { enabled: ayatOn, toggle: toggleAyat } = useAyatHarianReminder();
 
   useEffect(() => {
     const i = setInterval(() => setNow(new Date()), 30000);
@@ -147,6 +154,20 @@ const Index = () => {
                 title={mulkOn ? "Pengingat Al-Mulk: ON (20:00)" : "Pengingat Al-Mulk: OFF"}
               >
                 <BookOpen className="h-5 w-5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={toggleAyat}
+                className={
+                  ayatOn
+                    ? "shrink-0 rounded-full bg-accent/30 text-accent-foreground hover:bg-accent/40"
+                    : "shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                }
+                aria-label="Toggle pengingat ayat harian"
+                title={ayatOn ? "Pengingat Ayat Harian: ON (06:30)" : "Pengingat Ayat Harian: OFF"}
+              >
+                <Sun className="h-5 w-5" />
               </Button>
               <Button
                 variant="ghost"
@@ -308,6 +329,9 @@ const Index = () => {
           </div>
         )}
 
+        {/* Ayat Harian — selalu tersedia, motivasi pembuka hari */}
+        <AyatHarianCard />
+
         {/* Surah pilihan — selalu tersedia, terpisah dari daftar dzikir/doa */}
         <section className="space-y-3">
           <div className="flex items-end justify-between">
@@ -356,6 +380,18 @@ const Index = () => {
             icon={BookOpen}
             closing="Semoga Allah menerima dan memberkahi bacaan ini. Aamiin."
           />
+        </section>
+
+        {/* Bacaan & Ilmu Tambahan */}
+        <section className="space-y-3">
+          <div className="flex items-end justify-between">
+            <h2 className="font-display text-xl font-semibold text-primary">Bacaan & Ilmu</h2>
+            <span className="text-xs text-muted-foreground">Tap untuk membuka</span>
+          </div>
+          <AsmaulHusnaDialog />
+          <TahlilDialog />
+          <DoaTematikDialog />
+          <ArbainDialog />
         </section>
 
         <footer className="pt-6 text-center text-xs text-muted-foreground">
