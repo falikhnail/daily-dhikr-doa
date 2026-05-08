@@ -379,6 +379,18 @@ const Index = () => {
           />
         </section>
 
+        {/* Bacaan & Ilmu Tambahan */}
+        <section className="space-y-3">
+          <div className="flex items-end justify-between">
+            <h2 className="font-display text-xl font-semibold text-primary">Bacaan & Ilmu</h2>
+            <span className="text-xs text-muted-foreground">Tap untuk membuka</span>
+          </div>
+          <AsmaulHusnaDialog />
+          <TahlilDialog />
+          <DoaTematikDialog />
+          <ArbainDialog />
+        </section>
+
         <footer className="pt-6 text-center text-xs text-muted-foreground">
           <p className="font-arabic text-lg text-primary/70">رَبِّ زِدْنِي عِلْمًا</p>
           <p className="mt-1">Semoga Allah memberkahi setiap langkahmu hari ini</p>
