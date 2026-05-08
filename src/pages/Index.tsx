@@ -158,6 +158,20 @@ const Index = () => {
               <Button
                 variant="ghost"
                 size="icon"
+                onClick={toggleAyat}
+                className={
+                  ayatOn
+                    ? "shrink-0 rounded-full bg-accent/30 text-accent-foreground hover:bg-accent/40"
+                    : "shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+                }
+                aria-label="Toggle pengingat ayat harian"
+                title={ayatOn ? "Pengingat Ayat Harian: ON (06:30)" : "Pengingat Ayat Harian: OFF"}
+              >
+                <Sun className="h-5 w-5" />
+              </Button>
+              <Button
+                variant="ghost"
+                size="icon"
                 onClick={() => setSoundOn((s) => !s)}
                 className="shrink-0 rounded-full bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
                 aria-label="Toggle suara"
