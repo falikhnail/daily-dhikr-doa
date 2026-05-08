@@ -329,6 +329,9 @@ const Index = () => {
           </div>
         )}
 
+        {/* Ayat Harian — selalu tersedia, motivasi pembuka hari */}
+        <AyatHarianCard />
+
         {/* Surah pilihan — selalu tersedia, terpisah dari daftar dzikir/doa */}
         <section className="space-y-3">
           <div className="flex items-end justify-between">
