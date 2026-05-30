@@ -41,6 +41,7 @@ import { AsmaulHusnaDialog } from "@/components/AsmaulHusnaDialog";
 import { TahlilDialog } from "@/components/TahlilDialog";
 import { DoaTematikDialog } from "@/components/DoaTematikDialog";
 import { ArbainDialog } from "@/components/ArbainDialog";
+import { KirimDoaDialog } from "@/components/KirimDoaDialog";
 
 const Index = () => {
   const { times, loading, error, city, date } = usePrayerTimes();
@@ -390,6 +391,7 @@ const Index = () => {
           </div>
           <AsmaulHusnaDialog />
           <TahlilDialog />
+          <KirimDoaDialog />
           <DoaTematikDialog />
           <ArbainDialog />
         </section>
