@@ -391,6 +391,7 @@ const Index = () => {
           </div>
           <AsmaulHusnaDialog />
           <TahlilDialog />
+          <KirimDoaDialog />
           <DoaTematikDialog />
           <ArbainDialog />
         </section>
