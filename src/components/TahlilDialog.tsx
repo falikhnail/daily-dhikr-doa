@@ -47,14 +47,14 @@ export function TahlilDialog() {
           </p>
         </DialogHeader>
 
-        <Tabs defaultValue="yasin" className="flex flex-col">
-          <TabsList className="mx-4 mt-3 grid w-auto grid-cols-2">
+        <Tabs defaultValue="yasin" className="flex min-h-0 flex-1 flex-col">
+          <TabsList className="mx-4 mt-3 grid w-auto shrink-0 grid-cols-2">
             <TabsTrigger value="yasin">1. Surah Yasin</TabsTrigger>
             <TabsTrigger value="tahlil">2. Tahlil</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="yasin" className="m-0">
-            <ScrollArea className="max-h-[65vh]">
+          <TabsContent value="yasin" className="m-0 min-h-0 flex-1 overflow-hidden">
+            <ScrollArea className="h-full">
               <div className="space-y-3 p-4 sm:p-6">
                 <p dir="rtl" className="font-arabic text-center text-2xl leading-loose text-primary">
                   {YASIN_INFO.bismillah}
