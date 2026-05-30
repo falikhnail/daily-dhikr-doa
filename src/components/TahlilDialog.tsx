@@ -82,8 +82,8 @@ export function TahlilDialog() {
             </ScrollArea>
           </TabsContent>
 
-          <TabsContent value="tahlil" className="m-0">
-            <ScrollArea className="max-h-[65vh]">
+          <TabsContent value="tahlil" className="m-0 min-h-0 flex-1 overflow-hidden">
+            <ScrollArea className="h-full">
               <div className="space-y-3 p-4 sm:p-6">
                 {TAHLIL.map((b, i) => (
                   <article key={b.id} className="rounded-2xl border border-border bg-card p-4 shadow-soft">
