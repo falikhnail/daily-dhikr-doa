@@ -36,7 +36,7 @@ export function TahlilDialog() {
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-h-[90vh] max-w-2xl overflow-hidden p-0">
+      <DialogContent className="flex h-[90vh] max-h-[90vh] max-w-2xl flex-col overflow-hidden p-0">
         <DialogHeader className="border-b bg-hero p-5 text-primary-foreground sm:p-6">
           <DialogTitle className="flex flex-wrap items-baseline justify-between gap-2">
             <span className="font-display text-xl sm:text-2xl">Tahlil & Yasinan</span>
@@ -47,14 +47,14 @@ export function TahlilDialog() {
           </p>
         </DialogHeader>
 
-        <Tabs defaultValue="yasin" className="flex flex-col">
-          <TabsList className="mx-4 mt-3 grid w-auto grid-cols-2">
+        <Tabs defaultValue="yasin" className="flex min-h-0 flex-1 flex-col">
+          <TabsList className="mx-4 mt-3 grid w-auto shrink-0 grid-cols-2">
             <TabsTrigger value="yasin">1. Surah Yasin</TabsTrigger>
             <TabsTrigger value="tahlil">2. Tahlil</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="yasin" className="m-0">
-            <ScrollArea className="max-h-[65vh]">
+          <TabsContent value="yasin" className="m-0 min-h-0 flex-1 overflow-hidden">
+            <ScrollArea className="h-full">
               <div className="space-y-3 p-4 sm:p-6">
                 <p dir="rtl" className="font-arabic text-center text-2xl leading-loose text-primary">
                   {YASIN_INFO.bismillah}
@@ -82,8 +82,8 @@ export function TahlilDialog() {
             </ScrollArea>
           </TabsContent>
 
-          <TabsContent value="tahlil" className="m-0">
-            <ScrollArea className="max-h-[65vh]">
+          <TabsContent value="tahlil" className="m-0 min-h-0 flex-1 overflow-hidden">
+            <ScrollArea className="h-full">
               <div className="space-y-3 p-4 sm:p-6">
                 {TAHLIL.map((b, i) => (
                   <article key={b.id} className="rounded-2xl border border-border bg-card p-4 shadow-soft">
