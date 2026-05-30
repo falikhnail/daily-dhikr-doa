@@ -36,7 +36,7 @@ export function TahlilDialog() {
         </Button>
       </DialogTrigger>
 
-      <DialogContent className="max-h-[90vh] max-w-2xl overflow-hidden p-0">
+      <DialogContent className="flex h-[90vh] max-h-[90vh] max-w-2xl flex-col overflow-hidden p-0">
         <DialogHeader className="border-b bg-hero p-5 text-primary-foreground sm:p-6">
           <DialogTitle className="flex flex-wrap items-baseline justify-between gap-2">
             <span className="font-display text-xl sm:text-2xl">Tahlil & Yasinan</span>
